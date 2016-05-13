@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="209px" height="194px" viewBox="0 0 209 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Miscellaneous</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,102.5 C10,94.890625 40.5,111.5 40.5,78 C40.5,44.5 10,67.890625 10,62 L10,6 L76,6 C82.8255208,6 60.5,40 95.5,40 C130.5,40 109.158854,6 115.5,6 L172,6 L172,40.5 C172,51.0286458 202.5,8 202.5,66.5 C202.5,125 172,85.9192708 172,92.5 L172,150 L117.5,150 C109.825521,150 149.5,186 95.5,186 C41.5,186 77.4921875,150 69,150 L10,150 L10,102.5 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="192.5" height="180" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Miscellaneous" stroke="#313131" stroke-width="24">
+            <use id="Rectangle-19" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

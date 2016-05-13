@@ -13,6 +13,7 @@
   <input type="hidden" id="schema" name="schema" value="{{ schema }}">
 
   <fieldset>
+  <h3>BASIC INFO</h3>
     {% for field in dataset_fields %}
       {% if dataset_system_fields contains field.field_name %}
         {% assign template = field.form_template | default: "form/text.html" %}
@@ -23,7 +24,7 @@
     {% endfor %}
   </fieldset>
 
-  <h2>Resources</h2>
+  <h3>DATA FILES</h3>
   <div data-component="editable-list" data-item-label="resource">
     <div data-hook="items">
     {% for resource in include.dataset.resources %}
@@ -31,7 +32,7 @@
     {% endfor %}
     </div>
 
-    <button type="button" class="btn btn-default" data-hook="add-item-btn" title="Add resource"><i class="fa fa-plus"></i> Add Resource</button>
+    <button type="button" class="btn btn-default" data-hook="add-item-btn" title="Add resource"><i class="fa fa-plus"></i> Add File</button>
 
     <script type="text/template" data-hook="item-template">
     {% include dataset-form-resource.html %}
@@ -39,7 +40,8 @@
   </div>
 
   <fieldset>
-    <h2>Additional Info</h2>
+
+    <h3 class = "addl">ADDITIONAL INFO</h3>
 
     {% for field in dataset_fields %}
       {% unless dataset_system_fields contains field.field_name %}
@@ -52,10 +54,14 @@
 
   </fieldset>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" id="save" class="btn btn-primary">SAVE</button>
   {% if include.dataset %}
     <button class="btn btn-danger" data-component="delete-page-button" data-file-path="{{ include.dataset.path }}">
       <i class="fa fa-trash"></i> Delete dataset
     </button>
   {% endif %}
+
+  
+
+
 </form>

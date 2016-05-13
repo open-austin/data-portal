@@ -1,6 +1,7 @@
 {% for dataset in include.datasets %}
 <dataset>
   <h3><a href="{{ site.baseurl }}{{ dataset.url }}">{{ dataset.title }}</a></h3>
-  {{ dataset.notes | truncate: 300, '...' }}
+  <p>{{ dataset.notes | truncate: 300, '...' }}
+  </p>
 </dataset>
 {% endfor %}

@@ -1,25 +1,24 @@
-title: JKAN
-greeting: Welcome to JKAN
-description: A lightweight, backend-free open data portal, powered by Jekyll.
-baseurl: /jkan
-logo: /img/jkan.png
+title: PANDA
+greeting: Welcome to PANDA!
+description: The People of Austin's Network for Data Accessibility
+baseurl: /data-portal/
 
 # Site theme
-theme: Default
+theme: Lumen
 
 # Authentication
-github_client_id: 
-gatekeeper_host: 
+github_client_id: ab6c35c85f1962157f9c
+gatekeeper_host: https://open-austin-jkan-gatekeeper.herokuapp.com
 
 # Dataset schema
 schema: default
 
 # Nav bar
 navigation:
-  - title: Datasets
+  - title: Data
     url: /datasets/
-  - title: Organizations
-    url: /organizations/
+  - title: Resources
+    url: /resources/
 
 # Collections
 collections:
