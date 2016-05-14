@@ -10,111 +10,126 @@ layout: default
        <h4 class = "descrip">
         {{ site.description }}
       </h4>
-      </div>
+    </div>
   </div>
   <div class = "row description">
-    <div class = "col-xs-12 col-sm-6">
-      <div class = "row">
-        <div class = "col-xs-10 col-xs-offset-1">
+    <div class = "col-xs-12 col-sm-8">
           <p>
             In this portal live links to a ton of fascinating datasets related to the place you live, and it’s all completely free for you to use and make awesome stuff with. 
           </p>
-        </div>
-      </div>
     </div>
-    <div class = "col-sm-6">
+  </div>
+  <div class = "row threethings">
+    <div class = "col-xs-12">
       <div class = "three things">
         <p class = "info-tiles">
           <div class = "row">
-            <div class = "thing col-xs-4"><h6><i class="fa fa-search" aria-hidden="true"></i></h6>
-            <h4>Find</h4>
-            <p>datasets by category, contributor, and score</p>
+            <div class = "thing col-xs-4">
+              <h6>
+                <i class="fa fa-search" aria-hidden="true"></i></h6>
+                <h4>Find</h4>
+                <p>datasets by category, contributor, and score</p>
             </div>
-             <div class = "thing col-xs-3"><h6><i class="fa fa-lightbulb-o" aria-hidden="true"></i></h6>
-            <h4>Learn</h4>
-            <p>about tools to move projects along</p>
+            <div class = "thing col-xs-4">
+                <h6><i class="fa fa-lightbulb-o" aria-hidden="true"></i></h6>
+               <h4>Learn</h4>
+                <p>about tools to move projects along</p>
             </div>
-            <div class = "thing col-xs-4"><h6><i class="fa fa-plus" aria-hidden="true"></i></h6>
-            <h4>Add</h4>
-            <p>open data links & projects</p>
+            <div class = "thing col-xs-4">
+              <h6><i class="fa fa-plus" aria-hidden="true"></i></h6>
+              <h4>Add</h4>
+              <p>open data links & projects</p>
             </div>
           </div>
           <div class = "row">
-            <div class = "col-xs-4 col-xs-offset-4">
-                <a class="learnmore" href="{{ site.baseurl }}/datasets" role="button">Go To Portal</a>
+            <div class = "col-xs-12 firstbutton">
+                <a href="{{ site.baseurl }}/datasets" class ="gotoportal" role="button">Go To Portal</a>
             </div>
           </div>
         </p>
-         
-       </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class = "row examples">
-  <div class = "row exampletitle">
-    <div class = "col-xs-12">
-      <h3>Example Projects</h3>
+<div class = "row examplesandgetstarted">
+  <div class = "col-xs-12 col-sm-8">
+    <div class = "row exampletitle">
+      <div class = "col-xs-12">
+        <h3>Example Projects</h3>
+      </div>
     </div>
-  </div>
-  <div class = "row explanation">
-    <div class = "col-xs-12">
-      <p>Here are a few ways people around you are using open data to make Austin awesome.</p>
+    <div class = "row explanation">
+      <div class = "col-xs-12">
+        <p>Here are a few ways people around you are using open data to make Austin awesome.</p>
+      </div>
     </div>
-  </div>
-  <div class = "row examples">
-    <div class = "row example">
-      <div class = "col-xs-6 col-sm-4">
-        <div class = "exampleimage">
-           <img src = "{{ site.baseurl }}/img/greenmap.png">
+
+
+    <div class = "row examples">  
+      <div class = "col-xs-12">
+        <div class = "row example">
+          <div class = "col-xs-6">
+            <div class = "exampleimage">
+               <img src = "{{ site.baseurl }}/img/greenmap.png">
+            </div>
+          </div>
+          <div class = "col-xs-6">
+            <a target = "blank" href = "http://www.open-austin.org/projects/austingreenmap.html">Austin Green Map</a><br>
+            <p>An interactive map of 
+            Austin parks that you 
+            can search by 
+            amenity.</p>
+          </div>
         </div>
-      </div>
-      <div class = "col-xs-6 col-sm-4">
-        <a target = "blank" href = "http://www.open-austin.org/projects/austingreenmap.html">Austin Green Map</a><br>
-        <p>An interactive map of 
-        Austin parks that you 
-        can search by 
-        amenity.</p>
-      </div>
-    </div>
-    <div class = "row example">
-      <div class = "col-xs-6 col-sm-4">
-        <div class = "exampleimage">
-         <img src = "{{ site.baseurl }}/img/reportcard.png">
+
+        <div class = "row example">
+          <div class = "col-xs-6">
+            <div class = "exampleimage">
+             <img src = "{{ site.baseurl }}/img/reportcard.png">
+            </div>
+          </div>
+          <div class = "col-xs-6">
+            <a target = "blank" href = "http://www.open-austin.org/projects/open-data-progress-report.html">Open Data Report Card</a><br>
+            <p>A scorecard to track 
+            adoption of CoA’s 
+            Open Data Initiative</p>
+          </div>
         </div>
-      </div>
-      <div class = "col-xs-6 col-sm-4">
-        <a target = "blank" href = "http://www.open-austin.org/projects/open-data-progress-report.html">Open Data Report Card</a><br>
-        <p>A scorecard to track 
-        adoption of CoA’s 
-        Open Data Initiative</p>
-      </div>
-    </div>
-    <div class = "row example">
-      <div class = "col-xs-6 col-sm-4">
-        <div class = "exampleimage">
-        <img src = "{{ site.baseurl }}/img/capmetrics.png">
+
+        <div class = "row example">
+          <div class = "col-xs-6">
+            <div class = "exampleimage">
+            <img src = "{{ site.baseurl }}/img/capmetrics.png">
+            </div>
+          </div>
+          <div class = "col-xs-6">
+            <a target = "blank" href = "http://www.open-austin.org/projects/capmetrics.html">Capmetrics</a><br>
+            <p>A data visualization of
+            the bus’ actual versus 
+            planned schedule</p>
+          </div>
         </div>
-      </div>
-      <div class = "col-xs-6 col-sm-4">
-        <a target = "blank" href = "http://www.open-austin.org/projects/capmetrics.html">Capmetrics</a><br>
-        <p>A data visualization of
-        the bus’ actual versus 
-        planned schedule</p>
-      </div>
-    </div>
-    <div class = "col-xs-12">
-    <h3>Ready to get started?</h3>
-    <br>
-      <div class = "col-sm-6">
-        <p class = "center">Learn how to start a project or become a contributor</p><br>
-        <a class = "center" href = "{{ site.baseurl }}/resources">Resources</a><br><br>
-      </div>
-      <div class = "col-sm-6">
-        <p class = "center">Or jump right in and browse the datasets</p><br>
-        <a class = "center" href = "{{ site.baseurl }}/datasets">Go to Data</a>
       </div>
     </div>
   </div>
+
+  <div class = "col-xs-12 col-sm-4">
+    <div class = "getstarted">    
+        <h3>Ready to get started?</h3>
+        <br>
+        <div class = "col-xs-8 col-xs-offset-2">
+            <p class = "center">Learn how to start a project or become a contributor</p><br>
+            <a class = "center" href = "{{ site.baseurl }}/resources">Resources</a><br><br><br>
+            <p class = "center">Or jump right in and browse the datasets</p><br>
+            <a class = "center" href = "{{ site.baseurl }}/datasets">Go to Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a class = "Back to Top" href = "#">
+</a>
 
 </section>

@@ -24,7 +24,7 @@ a {
   text-decoration: underline;
   font-family: 'Open Sans';
   color: #EA4FBF;
-  font-weight: medium;
+  font-weight: 'bold';
   text-align: left;
   margin: 0;
   text-transform: uppercase; }
@@ -67,21 +67,35 @@ ul {
   list-style-type: none; }
 
 /* Welcome page */
-.welcome h2, .welcome h4 {
-  text-align: center; }
 .welcome h4.descrip {
   margin-bottom: 2em; }
 .welcome .btn {
   height: auto;
   width: auto; }
+.welcome a.gotoportal {
+  background-color: #EA4FBF;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-bottom: 2em; }
 .welcome .thing {
-  float: left;
-  text-align: center; }
-.welcome .learnmore {
-  text-align: center;
-  margin: 0 auto; }
-.welcome .getstarted {
   float: left; }
+.welcome .firstbutton {
+  margin-top: 2em;
+  float: right; }
+.welcome .getstarted {
+  overflow: hidden;
+  text-align: center;
+  background-color: #EDEFF3;
+  padding: 2em 0em; }
+  .welcome .getstarted a {
+    background-color: #EA4FBF;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-bottom: 2em; }
 .welcome .center {
   margin: 0 auto;
   text-align: center; }
@@ -143,7 +157,7 @@ a.innerdropdown {
 .score h1 {
   margin-top: 0;
   padding: 0.75em 0.5em;
-  color: white;
+  color: #313131;
   background-color: #91C565;
   border-radius: 2px; }
 
@@ -162,14 +176,14 @@ a.innerdropdown {
 
 .exampledataset h4 {
   margin-right: 0.25em;
-  color: white;
+  color: #313131;
   padding: 0.05em;
   margin-top: 0;
   text-align: center;
   float: left; }
 
 .ratings p {
-  color: white; }
+  color: #313131; }
 
 .exampletitlelink h3 {
   text-decoration: underline; }
@@ -180,9 +194,12 @@ a.innerdropdown {
 .exampletile {
   background-color: #EDEFF3;
   padding: 0 1em 1em 1em;
-  float: left;
-  max-width: 28em;
   margin-bottom: 1em; }
+
+div.ratings h1 {
+  text-align: center; }
+div.ratings p {
+  text-align: center; }
 
 /* dataset page */
 #datasetexampletile {
@@ -204,9 +221,6 @@ a.innerdropdown {
   border-radius: 2px;
   float: left;
   display: inline; }
-
-p {
-  float: left; }
 
 a.contributedby {
   margin-left: 0.5em; }
@@ -318,9 +332,14 @@ select[class="form-control"] {
 
 p.resourceanswer {
   padding: 1em;
-  background-color: #EDEFF3; }
+  background-color: #EDEFF3;
+  width: 100%;
+  float: none; }
 
 /* contributor page */
+.description a {
+  text-decoration: none; }
+
 .orgexample {
   margin-top: 1em;
   width: 100%; }
@@ -333,11 +352,6 @@ p.resourceanswer {
 
 .orgsearch {
   clear: both; }
-
-.projectsx {
-  clear: both;
-  background-color: #fff;
-  padding: 1em; }
 
 .project {
   margin-top: 1em; }
