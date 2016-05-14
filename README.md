@@ -52,10 +52,10 @@ Make the design modular so that other cities can fork & replace our content.
 ## Sitemap
 
 ### Before
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/Sitemap%20Before.png)
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/Sitemap%20Before.png)
 
 ### After
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/Sitemap%20New%20v3.png)
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/Sitemap%20New%20v3.png)
 
 ## User Stories
 
@@ -92,28 +92,28 @@ The [City of New York](https://data.cityofnewyork.us/data?cat=public%20safety) d
 I decided to build out a homepage and resources page in addition to the portal. 
 
 #### Small
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/sketches/MobileSketches.png)
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/sketches/MobileSketches.png)
 
 #### Medium
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/sketches/TabletSketches.png)
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/sketches/TabletSketches.png)
 
 #### Large
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/sketches/DesktopSketches.png)
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/sketches/DesktopSketches.png)
 
 ## Wireframes
 
-#### Small (Individual files [here](https://github.com/amaliebarras/data-portal/tree/gh-pages/Research/Mobile%20Wireframes))
+#### Small (Individual files [here](https://github.com/amaliebarras/data-portal-new/tree/gh-pages/Research/Mobile%20Wireframes))
 
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/Mobile%20Wireframes/WireframesSidebySideMobile.png)
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/Mobile%20Wireframes/WireframesSidebySideMobile.png)
 
-#### Medium + (Individual files [here](https://github.com/amaliebarras/data-portal/tree/gh-pages/Research/Tablet%20Wireframes))
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/Tablet%20Wireframes/WireframesSidebySideLarge.png)
+#### Medium + (Individual files [here](https://github.com/amaliebarras/data-portal-new/tree/gh-pages/Research/Tablet%20Wireframes))
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/Tablet%20Wireframes/WireframesSidebySideLarge.png)
 
 ## Mockups
 
-#### Small (Individual files [here](https://github.com/amaliebarras/data-portal/tree/gh-pages/Research/Mobile%20Mockups))
+#### Small (Individual files [here](https://github.com/amaliebarras/data-portal-new/tree/gh-pages/Research/Mobile%20Mockups))
 
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/Mobile%20Mockups/MobileMockupsSidebySide.png)
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/Mobile%20Mockups/MobileMockupsSidebySide.png)
 
-#### Medium + (Individual files [here](https://github.com/amaliebarras/data-portal/tree/gh-pages/Research/Large%20Mockups))
-![](https://github.com/amaliebarras/data-portal/blob/gh-pages/Research/Large%20Mockups/LargeMockupsSidebyside.png)
+#### Medium + (Individual files [here](https://github.com/amaliebarras/data-portal-new/tree/gh-pages/Research/Large%20Mockups))
+![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/Large%20Mockups/LargeMockupsSidebyside.png)
