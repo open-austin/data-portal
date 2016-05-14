@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="126px" height="145px" viewBox="0 0 126 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Planning</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="126" height="145" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="126" height="145" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Planning">
+            <use id="Rectangle-2" stroke="#313131" mask="url(#mask-2)" stroke-width="24" xlink:href="#path-1"></use>
+            <rect id="Rectangle-3" fill="#313131" x="20" y="17" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-3" fill="#313131" x="20" y="45" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-6" fill="#313131" x="20" y="73" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-9" fill="#313131" x="20" y="102" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy" fill="#313131" x="51" y="17" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-4" fill="#313131" x="51" y="45" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-7" fill="#313131" x="51" y="73" width="24" height="12" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-10" fill="#313131" x="51" y="89" width="23" height="36" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-2" fill="#313131" x="82" y="17" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-5" fill="#313131" x="82" y="45" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-8" fill="#313131" x="82" y="73" width="24" height="23" rx="4"></rect>
+            <rect id="Rectangle-3-Copy-11" fill="#313131" x="82" y="102" width="24" height="23" rx="4"></rect>
+        </g>
+    </g>
+</svg>
