@@ -7,22 +7,43 @@ permalink: /datasets/
 <section class = "container">
 
 <div class ="row">
-<div class ="col-xs-12">
-<h2>Datasets</h2>
-</div>
+  <div class ="col-xs-8">
+  <h2>Datasets</h2>
+  </div>
+  <div class ="col-xs-4 adddiv">
+     <a class = "add-dataset" href="{{ site.baseurl }}/add-dataset/" data-hook="add-dataset-btn">Add <i class="fa fa-plus"></i></a>
+     <!-- <a href="{{ site.baseurl }}/add-dataset/" class="btn btn-default pull-right admin-only" data-hook="add-dataset-btn"><i class="fa fa-plus"></i> Add Dataset</a> -->
+  </div>
 </div>
 
 <div class="row">
   <div class="col-xs-12 search">
   <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
-  <a href="{{ site.baseurl }}/add-dataset/" class="btn btn-default pull-right admin-only" data-hook="add-dataset-btn"><i class="fa fa-plus"></i> Add Dataset</a>
   </div>
 </div>
 
 <div class = "row">
   <div class = "browse col-xs-12">
-  <h4 class = "browsetext">BROWSE BY:</h4>
-    <div class="dropdown">
+
+      <div class = "row">
+        <div class = "col-xs-12">
+          <h4 class = "browsetext">BROWSE BY:</h4>
+        </div>
+      </div>
+
+      <div class = "row">
+          <div class = "col-xs-12">
+          <a href = "#" class = "browseselect">CATEGORIES</a>
+          <a href = "#" class =  "browseselect">CONTRIBUTORS</a>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<!--bootstrap toggle with data hookz-->
+
+    <!-- <div class="dropdown">
       <button class="browsedropdown btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         CATEGORY
         <span class="caret"></span>
@@ -30,9 +51,12 @@ permalink: /datasets/
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
         <li><a href="#">Organizations</a></li>
       </ul>
-    </div>
-  </div>
-</div>
+    </div> -->
+
+<!--end bootstrap toggle with data hookz-->
+
+
+<!--large category filter-->
 
 <!-- <div class="row">
   <div class="homepage-categories">
@@ -50,30 +74,40 @@ permalink: /datasets/
       {% endfor %}
       </div>
   </div>
-</div>  -->
+</div> 
+ -->
 
-<div class = "row">
+<!--end large category filter-->
+
+<!--row category filter-->
+
+<div class = "row categorydropdownrow">
   <div class="categorydropdown">
       {% for category in site.data.categories %}
         {% if category.featured == true %}
-          {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}   
-          <div class = "col-xs-12">       
-        <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="innerdropdown" title="{{ logo_alt }}">
-            {% if category.logo and category.logo != empty %}
-             <span class="innercaret caret innerdropdown"></span>
-              <img class = "icon innerdropdown" src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}">
+          {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}  
+          <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="innerdropdown" title="{{ logo_alt }}"> 
+            <div class = "row">
+                  <div class = "col-xs-12 category">
+                    {% if category.logo and category.logo != empty %}
+                      <img class = "icon innerdropdown" src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}">
+                    {% endif %}
+                    {{ category.name }}
+                  </div>
+            </div>
+
             {% endif %}
-            {{ category.name }}
-        </a>
-      </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+    {% endfor %} 
+          </a>
+    </div>
 </div>
+
+<!--row category filter-->
 
 <div class = "row">
   <div class="col-xs-12" data-component="datasets-list">
-    <h3 class="datasets-count" data-hook="datasets-count"></h3>
+   <!--  <h3 class="datasets-count" data-hook="datasets-count"></h3> -->
+    <h3> 3 Datasets</h3>
   </div>
 </div>
 

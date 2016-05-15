@@ -10,6 +10,10 @@ $grey-color: #B8B9B6;
 
 /* Universals */
 
+.row {
+  box-sizing: border-box;
+}
+
   * {
     color: $text-color;
     font-family: 'Open Sans';
@@ -61,48 +65,100 @@ $grey-color: #B8B9B6;
 /* Specific Styling */
 
   /* Nav */
-  .title {
-    margin-top: 0em;
-    border-bottom: none;
+
+.header {
+  a {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: solid 1px $cta-color;
   }
 
-  a#navlink  {
-    float: left
-  }
-
-  .login {
-    float: left;
-  }
-
-  .navbar {
-    border: none;
-  }
-
-  .navbar-brand {
-    padding-left: 0;
-    margin-left: 0;
-  }
-
-  li {
-    float: left;
-    margin-left: 0.5em;
-
-    list-style-type: none;
-    text-transform: uppercase;
+  .headerwrapper {
+      border-bottom: solid 3px $databutton-color;
+      margin: 0em 1em;
     }
-  
 
-  ul {
-    list-style-type: none;
-  }
+    .logo {
+      width: 100%;
+      height: 6em;
+      padding: 1em 0;
+    }
 
+   .logolink {
+      text-decoration: none;
+      border-bottom: none;
+      }
+
+    .title {
+      margin-top: 0em;
+      border-bottom: none;
+    }
+
+   #navlink {
+      float: left;
+      color: $text-color;
+    }
+
+    .login {
+      float: left;
+    }
+
+    .navbar {
+      border: none;
+    }
+
+    .navbar-brand {
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    li {
+      float: left;
+      margin-left: 0.5em;
+      list-style-type: none;
+      text-transform: uppercase;
+      }
+    
+
+    ul {
+      list-style-type: none;
+    }
+
+    a.loginbutton {
+      background-color: $databutton-color;
+      padding: 0.15em 1em;
+      border-radius: 2px;
+      color: white;
+      text-decoration: none;
+      margin-top: 0.25em;
+      border: none;
+    }
+
+    .nav>li>a:hover, .nav>li>a:focus {
+      background-color: $databutton-color;
+    }
+
+}
 
 /* Welcome page */
 
 .welcome {
 
+  .intro {
+    background-color: $background-color;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+      .description p {
+      text-align: center;
+    }
+
   h4.descrip {
     margin-bottom: 2em;
+    font-size: 1.0em;
   }
 
   .btn {
@@ -120,7 +176,9 @@ $grey-color: #B8B9B6;
   }
 
   .thing {
-    float: left;
+    h4 {
+      font-weight: bold;
+    }
   }
 
 .firstbutton {
@@ -152,9 +210,40 @@ $grey-color: #B8B9B6;
     margin: 0 auto;
     text-align: center;
   }
+  .viewmoreexamples {
+    a {
+      color: $text-color;
+      font-weight: bold;
+    }
+    margin-bottom: 5em;
+  }
+  .backtotop {
+    background-color: $databutton-color;
+    margin: 2em auto;
+    text-align: center;
+    h3, i {
+      color: white;
+    }
+  }
+   
 }
 
 /* Datasets page */
+
+.adddiv {
+  padding-top: 1.5em;
+}
+
+a.add-dataset {
+    border-radius: 2px;
+    color: white;
+    padding: 0.5em 1em;
+    background-color: $databutton-color;
+    text-decoration: none;
+    i {
+      color: white;
+    }
+}
 
 .search {
   margin-top: 1em;
@@ -167,6 +256,16 @@ $grey-color: #B8B9B6;
 .browsetext {
   float: left;
   margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+a.browseselect {
+  border-radius: 2px;
+    color: white;
+    padding: 0.5em 1em;
+    background-color: $databutton-color;
+    text-decoration: none;
+  margin-bottom: 2em;
 }
 
 .browsedropdown {
@@ -175,19 +274,33 @@ $grey-color: #B8B9B6;
   background-color: $databutton-color;
   font-size: 1.25em;
   border: none;
-  color: #313131;
+  color: white;
   font-weight: normal;
   padding: 0.35em 1em;
+  border-radius: 2px;
+  .caret {
+    color: white;
+  }
+}
+
+.categorydropdownrow {
+  margin-top: 1em;
 }
 
 .categorydropdown {
   height: 1em;
-  margin-top: 1.5em;
-  width: 100%;
   display: block;
   display: inline;
   float: none;
   margin-left: 0;
+}
+
+.category {
+  width: 80%;
+  margin: 0em 2em;
+ background-color: $background-color;
+ border-radius: 2px;
+ padding: 0.25em 1em;
 }
 
 .innerdropdown {
@@ -227,17 +340,17 @@ a.innerdropdown {
 
 .ratings {
   color: $text-color;
-  padding: 0.25em 1em;
+  padding: 0.5em 1em 0.25em 1em;
   border-radius: 2px;
-  background-color: $grey-color;
+  background-color: $text-color;
 }
 
 .projects {
   margin-top: 0.5em;
   color: $text-color;
-  padding: 0.25em 1em;
+  padding: 0.5em 1em 0.25em 1em;
  border-radius: 2px;
-  background-color: $grey-color;
+  background-color: $text-color;
 }
 
 .exampledataset h4 {
@@ -262,140 +375,161 @@ a.innerdropdown {
 }
 
 .exampletile {
+  a {
+    color: $text-color;
+    h3 {font-weight: bold;}
+  }
   background-color: $background-color;
   padding: 0 1em 1em 1em;
   margin-bottom: 1em;
-}
-
-div.ratings {
-  h1 {
-    text-align: center;
+    h1 {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+  .ratings p {
+      text-align: center;
+      font-size: 1em;
+      color: white;
   }
-  p {
+  .projects p {
+    font-size: 1em;
     text-align: center;
+    color: white;
   }
 }
-
 
 /* dataset page */
 
-#datasetexampletile {
-  padding: 0;
-  background-color: white;
-}
-
-.edit {
-  padding: 0.5em;
-  margin: 0 auto;
-}
-
-.edit {
-  display: inline-block;
-}
-
-.edit h4 {
-  text-transform: lowercase;
-  background-color: $databutton-color;
-  color: white;
-  padding: 0.5em;
-  border-radius: 2px;
-  float: left;
-  display: inline;
-}
-
-a.contributedby {
-  margin-left: 0.5em;
-}
-
-.iveused h4 {
-  text-transform: none;
-  background-color: $databutton-color;
-  color: white;
-  padding: 0.5em;
-  border-radius: 2px;
-  float: left;
-  display: inline;
-}
-
-.ratingsystem {
+.topsection {
+  background-color: $background-color;
+  padding: 1em;
   margin-top: 1em;
-}
+  a {
+    color: $cta-color;
+    font-weight: bold;
+  }
+
+  #datasetexampletile {
+    padding: 0;
+  }
+
+  .edit {
+    padding: 0.5em;
+    margin: 0 auto;
+    display: inline-block;
+       h4 {
+      text-transform: lowercase;
+      background-color: $databutton-color;
+      color: white;
+      padding: 0.5em;
+      border-radius: 2px;
+      float: left;
+      display: inline;
+    }
+  }
+
+  a.contributedby {
+    margin-left: 0.5em;
+  }
+
+  .iveused {
+    h4 {
+      margin-top: 1em;
+    text-transform: none;
+    background-color: $databutton-color;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2px;
+    float: left;
+    display: inline;
+  }
+  }
 
 .howrate {
-  margin-top: 1em;
+    margin-top: 1em;
+    }
+
+    .fa-thumbs-up {
+      margin-right: 0.5em;
+      color: #91C565;
+    }
+    .fa-thumbs-down {
+      color: #B02727;
+    }
+
+    .rate h1 {
+      text-align: left;
+    }
+
+  .datafiles {
+    padding: 0 1em 1em 1em;
+    float: left;
+    max-width: 28em;
+    margin-bottom: 1em;
+    i {
+    font-size: 1.5em;
+    margin-right: 0.25em;
+    }
+    a {
+    border: solid 2px #294B6B;
+    text-align: left;
+    color: white;
+    margin-top: 1em;
+    padding: 0 0.5em;
+    border-radius: 2px;
+    float: left;
+    display: inline;
+    }
+    h4 {
+    text-transform: uppercase;
+    }
+  }
+
+  table {
+    color: #313131;
+    margin-top: 1em;
+      background-color: white;
+  }
+
+  th {
+    font-weight: normal;
+  }
 }
 
-.fa-thumbs-up {
-  margin-right: 0.5em;
-  color: #91C565;
-}
-
-.fa-thumbs-down {
-  color: #B02727;
-}
-
-.datafiles {
-  padding: 0 1em 1em 1em;
-  float: left;
-  max-width: 28em;
-  margin-bottom: 1em;
-}
-
-.datafiles i {
-  font-size: 1.5em;
-  margin-right: 0.25em;
-}
-
-.datafiles a {
-  border: solid 2px #294B6B;
-  text-align: left;
-  color: white;
-  margin-top: 1em;
-  padding: 0 0.5em;
-  border-radius: 2px;
-  float: left;
-  display: inline;
-}
-
-table {
-  margin-top: 1em;
-    background-color: $background-color;
-}
-
-th {
-  font-weight: normal;
-}
-
-.datafiles h4 {
-  text-transform: uppercase;
-}
-
-.additional h4 {
-  text-transform: uppercase;
-}
+  .additional h4 {
+    text-transform: uppercase;
+  }
 
 
-.additional {
-  padding: 0 1em 1em 1em;
-  float: left;
-  margin-bottom: 1em;
-}
+  .additional {
+    padding: 0 1em 1em 1em;
+    float: left;
+    margin-bottom: 1em;
+  }
 
-.example {
-  height: 12em;
-  margin-bottom: 1em;
-}
+  .example {
+    height: 12em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
 
-.exampleimage img {
-  float: left;
-  width: 100%;
-  max-height: 12em;
-}
+  .exampleimage img {
+    float: left;
+    width: 100%;
+    max-height: 12em;
+  }
 
-.examples h4 {
-  text-transform: uppercase;
-  margin-bottom: 1em;
-}
+ h4 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  .exampledataset {
+    span {
+      color: white;
+    }
+  }
 
 /* add dataset page */
 

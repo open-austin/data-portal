@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="406px" height="381px" viewBox="0 0 406 381" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-994.000000, -1341.000000)">
+            <g id="Group-3" transform="translate(994.000000, 1341.000000)">
+                <path d="M25.4499438,378.318709 C24.0267516,379.705264 24.5021206,380.829288 26.5211111,380.829288 L403.343277,380.829292 C405.358058,380.829292 405.795573,379.749304 404.305642,378.403659 L210.344674,203.225987 C208.861392,201.886347 206.503016,201.926536 205.082038,203.310934 L25.4499438,378.318709" id="Rectangle-18-Copy" fill="#E96737"></path>
+                <path d="M381.040604,0.957172875 L4.21843861,0.957169258 C2.20365711,0.957169238 0.570353991,2.56203249 0.570353991,4.55099288 L0.570353991,375.768372 C0.570353991,377.753186 1.72393736,378.225771 3.15050771,376.820419 L382.108535,3.49894985 C383.533515,2.09516521 383.059595,0.957172895 381.040604,0.957172875 Z" id="Rectangle-18-Copy" fill="#294B6B"></path>
+                <polyline id="Line" stroke="#313131" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" points="299.932888 134.736416 244.028783 190.299059 306 244.579487"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

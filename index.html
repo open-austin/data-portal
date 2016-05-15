@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="container welcome">
-<div class="row">
+<div class="row intro">
   <div class = "row titlewrapper">
     <div class = "col-xs-12">
       <h2>{{ site.greeting }}</h2>
@@ -13,8 +13,8 @@ layout: default
     </div>
   </div>
   <div class = "row description">
-    <div class = "col-xs-12 col-sm-8">
-          <p>
+    <div class = "col-xs-12 col-sm-8 col-sm-offset-2">
+          <p class = "">
             In this portal live links to a ton of fascinating datasets related to the place you live, and it’s all completely free for you to use and make awesome stuff with. 
           </p>
     </div>
@@ -24,18 +24,18 @@ layout: default
       <div class = "three things">
         <p class = "info-tiles">
           <div class = "row">
-            <div class = "thing col-xs-4">
+            <div class = "thing col-xs-4 col-sm-3 col-sm-offset-1">
               <h6>
                 <i class="fa fa-search" aria-hidden="true"></i></h6>
                 <h4>Find</h4>
                 <p>datasets by category, contributor, and score</p>
             </div>
-            <div class = "thing col-xs-4">
+            <div class = "thing col-xs-4 col-sm-4">
                 <h6><i class="fa fa-lightbulb-o" aria-hidden="true"></i></h6>
                <h4>Learn</h4>
-                <p>about tools to move projects along</p>
+                <p>about and discover new tools to move projects along</p>
             </div>
-            <div class = "thing col-xs-4">
+            <div class = "thing col-xs-4 col-sm-3">
               <h6><i class="fa fa-plus" aria-hidden="true"></i></h6>
               <h4>Add</h4>
               <p>open data links & projects</p>
@@ -110,6 +110,12 @@ layout: default
             planned schedule</p>
           </div>
         </div>
+
+        <div class = "row viewmoreexamples">
+          <div class = "col-xs-12">
+            <a href = "http://www.open-austin.org/projects/">View More Examples...</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -129,7 +135,13 @@ layout: default
   </div>
 </div>
 
-<a class = "Back to Top" href = "#">
+<a href = "#">
+<div class = "row">
+  <div class = "col-xs-12 backtotop">
+      <h3>Back to Top <i class="fa fa-arrow-up" aria-hidden="true"></i>
+     </h3>
+  </div>
+</div>
 </a>
 
 </section>

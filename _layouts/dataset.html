@@ -11,73 +11,79 @@ layout: default
 {% capture organization_url %}{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}{% endcapture %}
 
 <div class = "container-fluid topsection">
-<div class="row">
-    <div class="col-xs-12 col-md-6">
-        <div class="exampletile" id = "datasetexampletile">
-            <div class="row">
-                <div class="col-xs-10">
-                    <a class="exampletitlelink" href="{{ site.baseurl }}/datasets/sample-3/"><h3>Example Dataset 1</h3></a>
-                    <div class = "contributedby"><p>Contributed by:</p><a class = "contributedby" href = "{{ site.baseurl }}organizations/raea/">Raea the Bear</a></div>
-                </div>
-                <div class="col-xs-2">
-                    <a class="edit" href="{{ site.baseurl }}/datasets/sample-3/"><h4>edit
-                    </h4></a>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-xs-12 col-md-6">
-        <div class="exampletile" id = "datasetexampletile">
-        <div class="exampledataset">
-            <div class="row">
-                <div class="col-xs-4">
-                    <div class="score">
-                        <h1>95%</h1></div>
-                    <div class="ratings">
-                        <p class="whitetext">
-                            <h4>20</h4> ratings</p>
-                    </div>
-                    <div class="projects">
-                        <p class="whitetext">
-                            <h4> 3</h4> projects</p>
-                    </div>
-                </div>
-                <div class="col-xs-8">
-                    <div class="description">
-                        <p>A 2009 dataset for rent prices in Austin from Trulia. Maintained through Jan 2015.</p>
-                    </div>
-                    <div class="format">
-                        <h2><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-file-excel-o" aria-hidden="true"></i></h2></div>
-                </div>
-            </div>
-            <div class = "row">
-              <div class = "col-xs-8">
-                <div class = "ratingsystem">
-                <a href = "#" class = "iveused"><h4>I've Used This Dataset!</h4></a>
-                <p class = "howrate">How would you rate your experience with these files?</p>
-                <h1><i class="fa fa-thumbs-up" aria-hidden="true"></i><i class="fa fa-thumbs-down" aria-hidden="true"></i></h1>
-                </div>
-                <p class = "thumbsmessage thumbsupmessage">Thanks for your feedback! Consider linking to your project below.
-                </p>
-                <p class = "thumbsmessage thumbsdownmessage">Sorry to hear that! We recommend reporting an issue to this dataset’s <a href = "#">maintainer.</a></p>
-              </div>
-            </div>
-        </div>
-    </div>
-</div>
-
   <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div class = "datafiles">
+      <div class="col-xs-12 col-sm-6">
+          <div class="exampletile" id = "datasetexampletile">
+              <div class="row">
+                  <div class="col-xs-10">
+                      <a class="exampletitlelink" href="{{ site.baseurl }}/datasets/sample-3/"><h3>Example Dataset 1</h3></a>
+                      <div class = "contributedby"><p>Contributed by: <a class = "contributedby" href = "{{ site.baseurl }}organizations/raea/">Raea the Bear</a></p></div>
+                  </div>
+                  <div class="col-xs-2">
+                    
+                  </div>
+              </div> 
+          </div>
+      </div>
+      <div class = "col-xs-12 col-sm-6">
+              <div class="col-xs-1 col-xs-offset-9">
+                <a class="edit" href="{{ site.baseurl }}/datasets/sample-3/"><h4>edit
+                </h4></a>
+            </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12 col-sm-6">
+          <div class="exampletile" id = "datasetexampletile">
+            <div class="exampledataset">
+                <div class="row">
+                    <div class="col-xs-5">
+                      <div class="score">
+                        <h1>95%</h1>
+                        </div>
+                      <div class="ratings">
+                          <p class = "whitetext"><span>20</span> ratings</p>
+                      </div>
+                      <div class="projects">
+                          <p class = "whitetext"><span>3</span> projects</p>
+                      </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="description">
+                            <p>A 2009 dataset for rent prices in Austin from Trulia. Maintained through Jan 2015.</p>
+                        </div>
+                        <div class="format">
+                            <h2><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-file-excel-o" aria-hidden="true"></i></h2></div>
+                    </div>
+                </div>
+
+                <div class = "row">
+                  <div class = "col-xs-12">
+                    <a href = "#" class = "iveused"><h4>I've Used This Dataset!</h4></a>
+                  </div>
+                  <div class = "col-xs-12 rate">
+                    <p class = "howrate">How would you rate your experience with these files?</p>
+                    <h1><i class="fa fa-thumbs-up" aria-hidden="true"></i><i class="fa fa-thumbs-down" aria-hidden="true"></i></h1>
+                  </div>
+                  <div class = "col-xs-12">
+                    <p class = "thumbsmessage thumbsupmessage">Thanks for your feedback! Consider linking to your project below.
+                    </p>
+                    <p class = "thumbsmessage thumbsdownmessage">Sorry to hear that! We recommend reporting an issue to this dataset’s <a href = "#">maintainer.</a></p>
+                  </div>
+                    
+                </div>          </div>
+        </div>
+    </div>
+
+      <div class="col-xs-12 col-sm-6">
+          <div class = "datafiles">
            <h4>Data Files </h4>
            <a target= "blank" href = "https://app.box.com/services/box_for_office_online/4881/65151687233/b336f0.ea710d162e065ed7aca8386f62fdb8f483f4fb08e2aa8d0609ae2fb81fffc843/Rent_Prices_in_Austin"><h5><i class="fa fa-file-excel-o nextto" aria-hidden="true"></i>Raw data file in excel, stored on box.com</h5></a>
            <a target= "blank" href = "http://www3.weforum.org/docs/WEF_GlobalCompetitivenessReport_2014-15.pdf"><h5><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF crosstab created from excel</h5></a>
          </div>
       </div>
-       <div class="col-xs-12 col-md-6">
+
+      <div class="col-xs-12 col-sm-6">
         <div class = "additional">
            <h4>Additional Info </h4>
            <table class="table dataset-details">
@@ -107,61 +113,49 @@ layout: default
           {% endunless %}
         {% endfor %}
 
-      </table>
-         </div>
+          </table>
+        </div>
       </div>
   </div>
 </div>
 
-</div>
 
 
 <div class = "row examples">
   <div class = "col-xs-12">
-    <div><h4>Projects Using This Dataset</h4></div>
-    <div class = "example">
-      <div class = "col-xs-6 col-sm-3">
-        <div class = "exampleimage">
-        <img src = "{{ site.baseurl }}/img/greenmap.png">
-        </div>
-      </div>
+    <h4 class = "projectsusing">Projects Using This Dataset</h4>
+    <div class = "row">
+      <div class = "example">
         <div class = "col-xs-6 col-sm-3">
-          <a href = "http://www.open-austin.org/projects/austingreenmap.html" target = "blank">Austin Green Map</a><br>
-          <p>An interactive map of 
-          Austin parks that you 
-          can search by 
-          amenity.</p>
+          <div class = "exampleimage">
+          <img src = "{{ site.baseurl }}/img/greenmap.png">
+          </div>
         </div>
-      </div>
-      <div class = "example">
-      <div class = "col-xs-6 col-sm-3">
-        <div class = "exampleimage">
-          <img src = "{{ site.baseurl }}/img/reportcard.png">
+          <div class = "col-xs-6 col-sm-3">
+            <a href = "http://www.open-austin.org/projects/austingreenmap.html" target = "blank">Austin Green Map</a><br>
+            <p>An interactive map of 
+            Austin parks that you 
+            can search by 
+            amenity.</p>
+          </div>
         </div>
-      </div>
-      <div class = "col-xs-6 col-sm-3">
-        <a href = "http://www.open-austin.org/projects/open-data-progress-report.html" target = "blank">Open Data Report Card</a><br>
-        <p>A scorecard to track 
-        adoption of CoA’s 
-        Open Data Initiative</p>
-      </div>
-      </div>
-      <div class = "example">
-      <div class = "col-xs-6 col-sm-3">
-        <div class = "exampleimage">
-        <img src = "{{ site.baseurl }}/img/capmetrics.png">
+        <div class = "example">
+        <div class = "col-xs-6 col-sm-3">
+          <div class = "exampleimage">
+            <img src = "{{ site.baseurl }}/img/reportcard.png">
+          </div>
         </div>
-      </div>
-      <div class = "col-xs-6 col-sm-3">
-        <a href = "http://www.open-austin.org/projects/capmetrics.html" target = "blank">Capmetrics</a><br>
-        <p>A data visualization of
-        the bus’ actual versus 
-        planned schedule</p>
+        <div class = "col-xs-6 col-sm-3">
+          <a href = "http://www.open-austin.org/projects/open-data-progress-report.html" target = "blank">Open Data Report Card</a><br>
+          <p>A scorecard to track 
+          adoption of CoA’s 
+          Open Data Initiative</p>
+        </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  
+</div>  
 
 
 
