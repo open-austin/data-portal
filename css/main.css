@@ -46,6 +46,8 @@ a {
 /* Specific Styling */
 /* Nav */
 .header a {
+  text-align: left;
+  margin: 0;
   color: #313131;
   text-decoration: none;
   border-bottom: solid 1px #EA4FBF; }
@@ -59,11 +61,21 @@ a {
   height: 6em;
   padding: 1em 0; }
 .header .logolink {
+  float: left;
   text-decoration: none;
   border-bottom: none; }
 .header .title {
   margin-top: 0em;
   border-bottom: none; }
+.header ul.subnav {
+  text-align: left;
+  float: left;
+  margin: 0;
+  padding: 0; }
+  .header ul.subnav li {
+    float: left; }
+    .header ul.subnav li:first-child {
+      margin-left: 0; }
 .header #navlink {
   float: left;
   color: #313131; }
@@ -82,18 +94,21 @@ a {
 .header ul {
   list-style-type: none; }
 .header a.loginbutton {
-  background-color: #294B6B;
+  color: #B8B9B6;
   padding: 0.15em 1em;
   border-radius: 2px;
-  color: white;
   text-decoration: none;
   margin-top: 0.25em;
-  border: none; }
-  .header a.loginbutton:hover {
-    background-color: #313131;
-    font-weight: normal; }
-.header .nav > li > a:hover, .header .nav > li > a:focus {
-  background-color: #313131; }
+  border: none;
+  float: right; }
+  .header a.loginbutton i {
+    float: none; }
+.header .navbar-right li {
+  float: right; }
+.header .nav > li > a:hover {
+  background-color: #B8B9B6;
+  color: white;
+  font-weight: normal; }
 
 /* Welcome page */
 .welcome .intro {
@@ -120,7 +135,12 @@ a {
   .welcome a.gotoportal:hover {
     background-color: #313131; }
 .welcome .thing h4 {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.25em; }
+.welcome .thing p {
+  margin: 0 auto;
+  max-width: 120px; }
 .welcome .firstbutton {
   margin-top: 2em;
   float: right; }
@@ -163,6 +183,7 @@ a {
   padding-top: 1.5em; }
 
 a.add-dataset {
+  float: right;
   border-radius: 2px;
   color: white;
   padding: 0.5em 1em;
@@ -210,10 +231,11 @@ a.browseselect {
     color: white; }
 
 .categorydropdownrow {
-  margin-top: 0.25em; }
+  margin-top: 0em; }
 
 .categorydropdown {
   height: 1em;
+  margin-top: 0em;
   display: block;
   display: inline;
   float: none;
@@ -240,6 +262,32 @@ a.innerdropdown {
 
 .examples {
   padding-top: 1em; }
+
+.organizations .dropdown button {
+  width: 80%;
+  text-align: left;
+  background-color: #EDEFF3;
+  color: #313131;
+  font-weight: normal; }
+.organizations ul {
+  text-align: left;
+  padding: 1em; }
+  .organizations ul a {
+    float: left;
+    text-align: left;
+    color: #313131;
+    width: 100%;
+    text-decoration: none; }
+
+.contributors {
+  margin-top: 2em;
+  display: none; }
+
+.categories {
+  display: none; }
+
+.active {
+  display: block; }
 
 /* datasets */
 /*dataset {

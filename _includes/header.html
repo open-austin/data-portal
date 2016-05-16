@@ -6,12 +6,13 @@
     </div>
     <div class = "col-xs-9 col-sm-10 titleandlinks">
         <div class = "row">
-          <div class ="col-xs-9 title-wrapper">
+          <div class ="col-xs-5 title-wrapper">
               <h1 class = "title">{{ site.title }}</h1>
           </div>
-          <div class = "col-xs-2 login">
+          <div class = "col-xs-7 login">
               <ul class="nav navbar-nav navbar-right">
-                <li><a class = "loginbutton" href="#" data-hook="login-link">Login</a></li>
+                <li><a class = "loginbutton" href="#" data-hook="login-link">RaeaBear <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a></li>
                 <li class="dropdown hidden" data-hook="user-dropdown">
                   <a href="#" id ="navlink" class="dropdown-toggle" data-hook="user-dropdown-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="user-issue" data-hook="user-issue"><i class="fa fa-exclamation-circle"></i></span>
@@ -30,14 +31,16 @@
             <div class = "row">
               <div class = "col-xs-12">
                 <div>
-                  <a id = "navlink" href="{{ site.baseurl }}/">Welcome</a>
+                  <!-- <a id = "navlink" href="{{ site.baseurl }}/">Welcome</a> -->
                 </div>
                   <ul class = "subnav">
-                    {% for link in site.navigation %}
-                      {% if page.url contains link.url %}
-                        <li class="active"><a id="navlink"  href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} <span class="sr-only">(current)</span></a></li>
+                    {% for item in site.pages %}
+                      {% if item.nav %}
+                      {% if page.url contains item.url or page.url == {{ site.baseurl }} %}
+                        <li class="active"><a id="navlink"  href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} <span class="sr-only">(current)</span></a></li>
                       {% else %}
-                        <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+                        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                        {% endif %}
                       {% endif %}
                     {% endfor %}
                   </ul>

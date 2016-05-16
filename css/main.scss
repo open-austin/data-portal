@@ -71,6 +71,8 @@ $grey-color: #B8B9B6;
 
 .header {
   a {
+    text-align: left;
+    margin: 0;
     color: $text-color;
     text-decoration: none;
     border-bottom: solid 1px $cta-color;
@@ -91,6 +93,7 @@ $grey-color: #B8B9B6;
     }
 
    .logolink {
+    float: left;
       text-decoration: none;
       border-bottom: none;
       }
@@ -98,6 +101,19 @@ $grey-color: #B8B9B6;
     .title {
       margin-top: 0em;
       border-bottom: none;
+    }
+
+    ul.subnav {
+      text-align: left;
+      float: left;
+      margin: 0;
+      padding: 0;
+      li {
+        float: left;
+        &:first-child {
+          margin-left: 0;
+      }
+      }
     }
 
    #navlink {
@@ -131,21 +147,28 @@ $grey-color: #B8B9B6;
     }
 
     a.loginbutton {
-      background-color: $databutton-color;
-      &:hover {
-      background-color: $text-color;
-      font-weight: normal;
-      }
+      color: $grey-color;
       padding: 0.15em 1em;
       border-radius: 2px;
-      color: white;
       text-decoration: none;
       margin-top: 0.25em;
       border: none;
+      float: right;
+      i {
+        float: none;
+      }
     }
 
-    .nav>li>a:hover, .nav>li>a:focus {
-      background-color: $text-color;
+    .navbar-right {  
+      li {
+        float: right;
+      }
+    }
+
+    .nav>li>a:hover {
+      background-color: $grey-color;
+      color: white;
+      font-weight: normal;
     }
 
 }
@@ -191,6 +214,12 @@ $grey-color: #B8B9B6;
   .thing {
     h4 {
       font-weight: bold;
+      margin-bottom: 0;
+      font-size: 1.25em;
+    }
+    p {
+      margin: 0 auto;
+      max-width: 120px;
     }
   }
 
@@ -254,6 +283,7 @@ $grey-color: #B8B9B6;
 }
 
 a.add-dataset {
+  float: right;
     border-radius: 2px;
     color: white;
     padding: 0.5em 1em;
@@ -312,11 +342,12 @@ a.browseselect {
 }
 
 .categorydropdownrow {
-  margin-top: 0.25em;
+  margin-top: 0em;
 }
 
 .categorydropdown {
   height: 1em;
+  margin-top: 0em;
   display: block;
   display: inline;
   float: none;
@@ -324,8 +355,8 @@ a.browseselect {
 }
 
 .category {
-  width: 80%;
-  margin: 0em 2em;
+width: 80%;
+margin: 0em 2em;
  background-color: $background-color;
  border-radius: 2px;
  padding: 0.25em 1em;
@@ -348,6 +379,39 @@ a.innerdropdown {
 
 .examples {
   padding-top: 1em;
+}
+
+.organizations {
+    .dropdown button {
+      width: 80%;
+      text-align: left;
+      background-color: $background-color;
+      color: $text-color;
+      font-weight: normal;
+    }
+  ul {
+    text-align: left;
+    padding: 1em;
+    a {
+      float: left;
+      text-align: left;
+      color: $text-color;
+      width: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.contributors {
+  margin-top: 2em;
+  display: none;
+}
+.categories {
+  display: none;
+}
+.active {
+  display: block;
 }
 
 /* datasets */
