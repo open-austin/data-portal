@@ -38,6 +38,8 @@ a {
   color: white;
   font-weight: medium;
   font-family: 'Open Sans'; }
+  .btn:hover {
+    background-color: #313131; }
   .btn i {
     color: white; }
 
@@ -47,6 +49,8 @@ a {
   color: #313131;
   text-decoration: none;
   border-bottom: solid 1px #EA4FBF; }
+  .header a:hover {
+    font-weight: bold; }
 .header .headerwrapper {
   border-bottom: solid 3px #294B6B;
   margin: 0em 1em; }
@@ -85,8 +89,11 @@ a {
   text-decoration: none;
   margin-top: 0.25em;
   border: none; }
+  .header a.loginbutton:hover {
+    background-color: #313131;
+    font-weight: normal; }
 .header .nav > li > a:hover, .header .nav > li > a:focus {
-  background-color: #294B6B; }
+  background-color: #313131; }
 
 /* Welcome page */
 .welcome .intro {
@@ -110,6 +117,8 @@ a {
   text-decoration: none;
   border-radius: 2px;
   margin-bottom: 2em; }
+  .welcome a.gotoportal:hover {
+    background-color: #313131; }
 .welcome .thing h4 {
   font-weight: bold; }
 .welcome .firstbutton {
@@ -127,6 +136,8 @@ a {
     text-decoration: none;
     border-radius: 2px;
     margin-bottom: 2em; }
+    .welcome .getstarted a:hover {
+      background-color: #313131; }
 .welcome .center {
   margin: 0 auto;
   text-align: center; }
@@ -142,6 +153,8 @@ a {
   background-color: #294B6B;
   margin: 2em auto;
   text-align: center; }
+  .welcome .backtotop:hover {
+    background-color: #313131; }
   .welcome .backtotop h3, .welcome .backtotop i {
     color: white; }
 
@@ -155,6 +168,8 @@ a.add-dataset {
   padding: 0.5em 1em;
   background-color: #294B6B;
   text-decoration: none; }
+  a.add-dataset:hover {
+    background-color: #313131; }
   a.add-dataset i {
     color: white; }
 
@@ -176,6 +191,8 @@ a.browseselect {
   background-color: #294B6B;
   text-decoration: none;
   margin-bottom: 2em; }
+  a.browseselect:hover {
+    background-color: #313131; }
 
 .browsedropdown {
   display: block;
@@ -187,11 +204,13 @@ a.browseselect {
   font-weight: normal;
   padding: 0.35em 1em;
   border-radius: 2px; }
+  .browsedropdown:hover {
+    background-color: #313131; }
   .browsedropdown .caret {
     color: white; }
 
 .categorydropdownrow {
-  margin-top: 1em; }
+  margin-top: 0.25em; }
 
 .categorydropdown {
   height: 1em;
@@ -271,7 +290,7 @@ a.innerdropdown {
   margin-bottom: 1em; }
   .exampletile a {
     color: #313131; }
-    .exampletile a h3 {
+    .exampletile a:hover h3 {
       font-weight: bold; }
   .exampletile h1 {
     text-align: center;
@@ -294,6 +313,8 @@ a.innerdropdown {
   .topsection a {
     color: #EA4FBF;
     font-weight: bold; }
+    .topsection a:hover {
+      background-color: #313131; }
   .topsection #datasetexampletile {
     padding: 0; }
   .topsection .edit {
@@ -308,6 +329,8 @@ a.innerdropdown {
       border-radius: 2px;
       float: left;
       display: inline; }
+      .topsection .edit h4:hover {
+        background-color: #313131; }
   .topsection a.contributedby {
     margin-left: 0.5em; }
   .topsection .iveused h4 {
@@ -319,6 +342,8 @@ a.innerdropdown {
     border-radius: 2px;
     float: left;
     display: inline; }
+    .topsection .iveused h4:hover {
+      background-color: #313131; }
   .topsection .howrate {
     margin-top: 1em; }
   .topsection .fa-thumbs-up {
@@ -337,14 +362,20 @@ a.innerdropdown {
       font-size: 1.5em;
       margin-right: 0.25em; }
     .topsection .datafiles a {
-      border: solid 2px #294B6B;
+      border: solid 2px #EA4FBF;
       text-align: left;
-      color: white;
       margin-top: 1em;
       padding: 0 0.5em;
       border-radius: 2px;
       float: left;
       display: inline; }
+      .topsection .datafiles a:hover {
+        color: white;
+        background-color: #294B6B; }
+        .topsection .datafiles a:hover i {
+          color: white; }
+        .topsection .datafiles a:hover h5 {
+          color: white; }
     .topsection .datafiles h4 {
       text-transform: uppercase; }
   .topsection table {

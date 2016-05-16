@@ -56,6 +56,9 @@ $grey-color: #B8B9B6;
     color: white;
     font-weight: medium;
     font-family: 'Open Sans';
+    &:hover {
+      background-color: $text-color;
+    }
     i {
       color: white;
     }  
@@ -71,6 +74,9 @@ $grey-color: #B8B9B6;
     color: $text-color;
     text-decoration: none;
     border-bottom: solid 1px $cta-color;
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   .headerwrapper {
@@ -126,6 +132,10 @@ $grey-color: #B8B9B6;
 
     a.loginbutton {
       background-color: $databutton-color;
+      &:hover {
+      background-color: $text-color;
+      font-weight: normal;
+      }
       padding: 0.15em 1em;
       border-radius: 2px;
       color: white;
@@ -135,7 +145,7 @@ $grey-color: #B8B9B6;
     }
 
     .nav>li>a:hover, .nav>li>a:focus {
-      background-color: $databutton-color;
+      background-color: $text-color;
     }
 
 }
@@ -173,6 +183,9 @@ $grey-color: #B8B9B6;
       text-decoration: none;
       border-radius: 2px;
       margin-bottom: 2em;
+      &:hover {
+      background-color: $text-color;
+    }
   }
 
   .thing {
@@ -198,6 +211,9 @@ $grey-color: #B8B9B6;
       text-decoration: none;
       border-radius: 2px;
       margin-bottom: 2em;
+      &:hover {
+      background-color: $text-color;
+    }
     }
   }
 
@@ -219,6 +235,9 @@ $grey-color: #B8B9B6;
   }
   .backtotop {
     background-color: $databutton-color;
+    &:hover {
+      background-color: $text-color;
+    }
     margin: 2em auto;
     text-align: center;
     h3, i {
@@ -239,6 +258,9 @@ a.add-dataset {
     color: white;
     padding: 0.5em 1em;
     background-color: $databutton-color;
+    &:hover {
+      background-color: $text-color;
+    }
     text-decoration: none;
     i {
       color: white;
@@ -264,6 +286,9 @@ a.browseselect {
     color: white;
     padding: 0.5em 1em;
     background-color: $databutton-color;
+    &:hover {
+      background-color: $text-color;
+    }
     text-decoration: none;
   margin-bottom: 2em;
 }
@@ -272,6 +297,9 @@ a.browseselect {
   display: block;
   float: left;
   background-color: $databutton-color;
+  &:hover {
+      background-color: $text-color;
+    }
   font-size: 1.25em;
   border: none;
   color: white;
@@ -284,7 +312,7 @@ a.browseselect {
 }
 
 .categorydropdownrow {
-  margin-top: 1em;
+  margin-top: 0.25em;
 }
 
 .categorydropdown {
@@ -377,7 +405,7 @@ a.innerdropdown {
 .exampletile {
   a {
     color: $text-color;
-    h3 {font-weight: bold;}
+    &:hover h3 {font-weight: bold;}
   }
   background-color: $background-color;
   padding: 0 1em 1em 1em;
@@ -408,6 +436,9 @@ a.innerdropdown {
   a {
     color: $cta-color;
     font-weight: bold;
+    &:hover {
+      background-color: $text-color;
+    }
   }
 
   #datasetexampletile {
@@ -426,6 +457,9 @@ a.innerdropdown {
       border-radius: 2px;
       float: left;
       display: inline;
+      &:hover {
+      background-color: $text-color;
+    }
     }
   }
 
@@ -438,6 +472,9 @@ a.innerdropdown {
       margin-top: 1em;
     text-transform: none;
     background-color: $databutton-color;
+    &:hover {
+      background-color: $text-color;
+    }
     color: white;
     padding: 0.5em;
     border-radius: 2px;
@@ -472,14 +509,23 @@ a.innerdropdown {
     margin-right: 0.25em;
     }
     a {
-    border: solid 2px #294B6B;
+    border: solid 2px $cta-color;
     text-align: left;
-    color: white;
     margin-top: 1em;
     padding: 0 0.5em;
     border-radius: 2px;
     float: left;
     display: inline;
+    &:hover {
+      color: white;
+      background-color: $databutton-color;
+      i {
+        color: white;
+      }
+      h5 {
+        color: white;
+      }
+    }
     }
     h4 {
     text-transform: uppercase;
