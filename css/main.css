@@ -52,7 +52,7 @@ a {
   text-decoration: none;
   border-bottom: solid 1px #EA4FBF; }
   .header a:hover {
-    font-weight: bold; }
+    border-bottom: solid 2px #EA4FBF; }
 .header .headerwrapper {
   border-bottom: solid 3px #294B6B;
   margin: 0em 1em; }
@@ -81,6 +81,8 @@ a {
   color: #313131; }
 .header .login {
   float: left; }
+.header .nav-active {
+  font-weight: bold; }
 .header .navbar {
   border: none; }
 .header .navbar-brand {
@@ -184,15 +186,13 @@ a {
 
 a.add-dataset {
   float: right;
+  color: #313131;
   border-radius: 2px;
-  color: white;
   padding: 0.5em 1em;
-  background-color: #294B6B;
+  border: solid 2px #294B6B;
   text-decoration: none; }
   a.add-dataset:hover {
-    background-color: #313131; }
-  a.add-dataset i {
-    color: white; }
+    background-color: #B8B9B6; }
 
 .search {
   margin-top: 1em; }
@@ -263,16 +263,17 @@ a.innerdropdown {
 .examples {
   padding-top: 1em; }
 
-.organizations .dropdown button {
+.contributors .dropdown button {
   width: 80%;
   text-align: left;
   background-color: #EDEFF3;
   color: #313131;
-  font-weight: normal; }
-.organizations ul {
+  font-weight: normal;
+  font-size: 1em; }
+.contributors ul {
   text-align: left;
   padding: 1em; }
-  .organizations ul a {
+  .contributors ul a {
     float: left;
     text-align: left;
     color: #313131;
@@ -283,11 +284,50 @@ a.innerdropdown {
   margin-top: 2em;
   display: none; }
 
-.categories {
+.categories, .thumbs-wrapper, .thumbsupmessage, .thumbsdownmessage {
   display: none; }
 
 .active {
   display: block; }
+
+.subcategories {
+  display: none; }
+  .subcategories ul {
+    list-style-type: none; }
+  .subcategories li {
+    padding: 0; }
+    .subcategories li:first-child {
+      margin-left: 0; }
+
+.excategory img {
+  width: 2em;
+  margin: 0 1em; }
+
+.exsubcategories {
+  background-color: #EDEFF3;
+  display: none;
+  width: 80%;
+  margin-left: 2em; }
+  .exsubcategories ul {
+    list-style-type: none; }
+  .exsubcategories li {
+    padding: 0.5em;
+    padding: 0; }
+    .exsubcategories li a {
+      text-decoration: none;
+      color: #313131; }
+    .exsubcategories li:first-child {
+      margin-left: 0; }
+    .exsubcategories li:hover {
+      background-color: #B8B9B6; }
+
+.subcat {
+  background-color: #EDEFF3;
+  text-decoration: none;
+  text-transform: none;
+  padding: 0.5em; }
+  .subcat:hover {
+    background-color: #B8B9B6; }
 
 /* datasets */
 /*dataset {
@@ -361,24 +401,26 @@ a.innerdropdown {
   .topsection a {
     color: #EA4FBF;
     font-weight: bold; }
-    .topsection a:hover {
-      background-color: #313131; }
   .topsection #datasetexampletile {
     padding: 0; }
   .topsection .edit {
-    padding: 0.5em;
-    margin: 0 auto;
-    display: inline-block; }
+    float: right;
+    padding: 0.25em 1em;
+    margin: 2em auto 1em auto;
+    display: inline-block;
+    color: #313131;
+    border: solid 2px #294B6B;
+    border-radius: 2px;
+    text-decoration: none; }
+    .topsection .edit:hover {
+      background-color: #B8B9B6; }
     .topsection .edit h4 {
       text-transform: lowercase;
-      background-color: #294B6B;
-      color: white;
-      padding: 0.5em;
+      padding: 0;
+      margin: 0 auto;
       border-radius: 2px;
-      float: left;
+      text-align: center;
       display: inline; }
-      .topsection .edit h4:hover {
-        background-color: #313131; }
   .topsection a.contributedby {
     margin-left: 0.5em; }
   .topsection .iveused h4 {
@@ -410,20 +452,16 @@ a.innerdropdown {
       font-size: 1.5em;
       margin-right: 0.25em; }
     .topsection .datafiles a {
-      border: solid 2px #EA4FBF;
+      border: solid 2px #294B6B;
       text-align: left;
       margin-top: 1em;
       padding: 0 0.5em;
       border-radius: 2px;
       float: left;
-      display: inline; }
+      display: inline;
+      text-decoration: none; }
       .topsection .datafiles a:hover {
-        color: white;
-        background-color: #294B6B; }
-        .topsection .datafiles a:hover i {
-          color: white; }
-        .topsection .datafiles a:hover h5 {
-          color: white; }
+        background-color: #B8B9B6; }
     .topsection .datafiles h4 {
       text-transform: uppercase; }
   .topsection table {
@@ -456,6 +494,26 @@ h4 {
 
 .exampledataset span {
   color: white; }
+
+.add {
+  float: right;
+  padding: 0.25em 1em;
+  margin: 2em auto 1em auto;
+  display: inline-block;
+  color: #313131;
+  border: solid 2px #294B6B;
+  border-radius: 2px;
+  text-decoration: none; }
+  .add:hover {
+    text-decoration: none;
+    background-color: #B8B9B6; }
+  .add h4 {
+    text-transform: lowercase;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 2px;
+    text-align: center;
+    display: inline; }
 
 /* add dataset page */
 .addl {
@@ -496,8 +554,28 @@ p.resourceanswer {
   float: none; }
 
 /* contributor page */
-.description a {
+.editcol .edit {
+  float: right;
+  padding: 0.25em 1em;
+  margin: 2em auto 1em auto;
+  display: inline-block;
+  color: #313131;
+  border: solid 2px #294B6B;
+  border-radius: 2px;
   text-decoration: none; }
+  .editcol .edit:hover {
+    background-color: #B8B9B6; }
+  .editcol .edit h4 {
+    text-transform: lowercase;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 2px;
+    text-align: center;
+    display: inline; }
+
+.description a {
+  text-decoration: none;
+  max-width: 80%; }
 
 .orgexample {
   margin-top: 1em;

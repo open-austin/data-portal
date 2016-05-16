@@ -5,7 +5,7 @@ permalink: /datasets/
 nav: true
 ---
 
-<section class = "container">
+<section>
 
 <div class ="row">
   <div class ="col-xs-8">
@@ -85,6 +85,28 @@ nav: true
 <div class = "categories active">
   <div class = "row categorydropdownrow">
     <div class="categorydropdown">
+            <a class="innerdropdown"> 
+              <div class = "row">
+                    <div class = "col-xs-12 category excategory">
+                        <img class = "icon innerdropdown" src="{{ site.baseurl }}/img/logo2.svg">
+                      Example Category
+                    </div>
+                    <div class = "col-xs-12 exsubcategories">
+                      <ul>
+                        <li><a href = "subcat">Crime</a></li>
+                        <li><a href = "subcat">Police Reports</a></li>
+                        <li><a href = "subcat">Public Safety</a></li>
+                        <li><a href = "subcat">Health and Human Services</a></li>
+                      </ul>
+                    </div>
+              </div>
+      </div>
+  </div>
+</div>
+
+<div class = "categories active">
+  <div class = "row categorydropdownrow">
+    <div class="categorydropdown">
         {% for category in site.data.categories %}
           {% if category.featured == true %}
             {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}  
@@ -96,14 +118,61 @@ nav: true
                       {% endif %}
                       {{ category.name }}
                     </div>
+                    <div class = "col-xs-12 subcategories">
+                      <ul>
+                        <li><a href = "subcat">Crime</a></li>
+                        <li><a href = "subcat">Police Reports</a></li>
+                        <li><a href = "subcat">Public Safety</a></li>
+                        <li><a href = "subcat">Health and Human Services</a></li>
+                      </ul>
+                    </div>
               </div>
-
               {% endif %}
       {% endfor %} 
             </a>
       </div>
   </div>
 </div>
+
+<!-- 
+
+<div class = "categories active">
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+
+    
+    {% for category in site.data.categories %}
+      {% if category.featured == true %}
+        {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}  
+
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="innerdropdown" title="{{ logo_alt }}">
+                    <div>
+                        {% if category.logo and category.logo != empty %}
+                          <img class = "icon innerdropdown" src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}">
+                        {% endif %}
+                        {{ category.name }}
+                    </div>
+           </a>
+        </h4>
+      </div>
+
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          
+          <a href = "href={{ site.baseurl }}/datasets/?category={{ category.name | slugify }}"> Show {{ category.name }}</a>
+        </div>
+      </div>
+        
+                {% endif %}
+        {% endfor %} 
+
+    </div>
+  </div>
+</div>
+
 <!--row category filter-->
 
 <div class = "contributors">
@@ -156,16 +225,3 @@ nav: true
 </section>
 
 
-<script>
-
-$('#cont-button').click(function(){
-  $('.contributors').addClass('active');
-  $('.categories').removeClass('active');
-});
-
-$('#cat-button').click(function(){
-  $('.categories').addClass('active');
-  $('.contributors').removeClass('active');
-});
-
-</script>

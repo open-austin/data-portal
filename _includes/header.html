@@ -1,4 +1,4 @@
-<section class = "container header">
+<div class = "header">
 
 <div class = "row headerwrapper">
     <div class = "col-xs-3 col-sm-2">
@@ -36,8 +36,8 @@
                   <ul class = "subnav">
                     {% for item in site.pages %}
                       {% if item.nav %}
-                      {% if page.url contains item.url or page.url == {{ site.baseurl }} %}
-                        <li class="active"><a id="navlink"  href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} <span class="sr-only">(current)</span></a></li>
+                      {% if page.url == item.url }} %}
+                        <li class="nav-active"><a id="navlink"  href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} <span class="sr-only">(current)</span></a></li>
                       {% else %}
                         <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
                         {% endif %}
@@ -50,4 +50,4 @@
     </div>
 </div>
 
-</section>
+</div>

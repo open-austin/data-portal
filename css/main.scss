@@ -77,7 +77,7 @@ $grey-color: #B8B9B6;
     text-decoration: none;
     border-bottom: solid 1px $cta-color;
     &:hover {
-      font-weight: bold;
+    border-bottom: solid 2px $cta-color;
     }
   }
 
@@ -123,6 +123,10 @@ $grey-color: #B8B9B6;
 
     .login {
       float: left;
+    }
+
+    .nav-active {
+      font-weight: bold;
     }
 
     .navbar {
@@ -284,17 +288,14 @@ $grey-color: #B8B9B6;
 
 a.add-dataset {
   float: right;
+  color: $text-color;
     border-radius: 2px;
-    color: white;
     padding: 0.5em 1em;
-    background-color: $databutton-color;
+    border: solid 2px $databutton-color;
     &:hover {
-      background-color: $text-color;
+      background-color: $grey-color;
     }
     text-decoration: none;
-    i {
-      color: white;
-    }
 }
 
 .search {
@@ -381,13 +382,15 @@ a.innerdropdown {
   padding-top: 1em;
 }
 
-.organizations {
+.contributors {
     .dropdown button {
       width: 80%;
       text-align: left;
       background-color: $background-color;
       color: $text-color;
       font-weight: normal;
+
+      font-size: 1em;
     }
   ul {
     text-align: left;
@@ -407,11 +410,60 @@ a.innerdropdown {
   margin-top: 2em;
   display: none;
 }
-.categories {
+.categories, .thumbs-wrapper, .thumbsupmessage, .thumbsdownmessage {
   display: none;
 }
 .active {
   display: block;
+}
+
+.subcategories {
+  display: none;
+  ul {  list-style-type: none;
+  }
+  li {
+    &:first-child{ margin-left: 0;}
+    padding: 0;
+  }
+}
+
+.excategory {
+    img {
+    width: 2em;
+    margin: 0 1em;
+  }
+}
+
+  .exsubcategories {
+    background-color: $background-color;
+    display: none;
+    width: 80%;
+    margin-left: 2em;
+    ul { 
+      list-style-type: none;
+    }
+    li {
+      padding: 0.5em;
+      a {
+        text-decoration: none;
+        color: $text-color;
+      }
+      &:first-child{ margin-left: 0;}
+      padding: 0;
+       &:hover {
+      background-color: $grey-color;
+    }
+  }
+}
+
+.subcat {
+  background-color: $background-color;
+  text-decoration: none;
+  text-transform: none;
+  padding: 0.5em;
+  &:hover {
+    background-color: $grey-color;
+  }
 }
 
 /* datasets */
@@ -500,31 +552,32 @@ a.innerdropdown {
   a {
     color: $cta-color;
     font-weight: bold;
-    &:hover {
-      background-color: $text-color;
-    }
   }
 
   #datasetexampletile {
     padding: 0;
   }
 
-  .edit {
-    padding: 0.5em;
-    margin: 0 auto;
-    display: inline-block;
-       h4 {
-      text-transform: lowercase;
-      background-color: $databutton-color;
-      color: white;
-      padding: 0.5em;
+    .edit {
+      float: right;
+      padding: 0.25em 1em;
+      margin: 2em auto 1em auto;
+      display: inline-block;
+      color: $text-color;
+      border: solid 2px $databutton-color;
       border-radius: 2px;
-      float: left;
-      display: inline;
-      &:hover {
-      background-color: $text-color;
-    }
-    }
+      text-decoration: none;
+        &:hover {
+        background-color: $grey-color;
+      }
+        h4 {
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 2px;
+        text-align: center;
+        display: inline;
+      }
   }
 
   a.contributedby {
@@ -573,28 +626,23 @@ a.innerdropdown {
     margin-right: 0.25em;
     }
     a {
-    border: solid 2px $cta-color;
+    border: solid 2px $databutton-color;
     text-align: left;
     margin-top: 1em;
     padding: 0 0.5em;
     border-radius: 2px;
     float: left;
     display: inline;
-    &:hover {
-      color: white;
-      background-color: $databutton-color;
-      i {
-        color: white;
-      }
-      h5 {
-        color: white;
+    text-decoration: none;
+      &:hover {
+        background-color: $grey-color;
       }
     }
-    }
+
     h4 {
     text-transform: uppercase;
     }
-  }
+}
 
   table {
     color: #313131;
@@ -639,6 +687,30 @@ a.innerdropdown {
       color: white;
     }
   }
+
+  .add {
+      float: right;
+      padding: 0.25em 1em;
+      margin: 2em auto 1em auto;
+      display: inline-block;
+      color: $text-color;
+      border: solid 2px $databutton-color;
+      border-radius: 2px;
+      text-decoration: none;
+        &:hover {
+        
+      text-decoration: none;
+        background-color: $grey-color;
+      }
+        h4 {
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 2px;
+        text-align: center;
+        display: inline;
+      }
+    }
 
 /* add dataset page */
 
@@ -690,8 +762,33 @@ p.resourceanswer {
 
 /* contributor page */
 
+.editcol {
+.edit {
+      float: right;
+      padding: 0.25em 1em;
+      margin: 2em auto 1em auto;
+      display: inline-block;
+      color: $text-color;
+      border: solid 2px $databutton-color;
+      border-radius: 2px;
+      text-decoration: none;
+        &:hover {
+        background-color: $grey-color;
+      }
+        h4 {
+        text-transform: lowercase;
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 2px;
+        text-align: center;
+        display: inline;
+      }
+  }
+}
+
 .description a {
   text-decoration: none;
+  max-width: 80%;
 }
 
 .orgexample {

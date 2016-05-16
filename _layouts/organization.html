@@ -3,10 +3,19 @@ layout: default
 ---
 <div class="row">
   <div class = "col-xs-12">
-    <h2>
-      {{ page.title }}
-    </h2>
-    <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
+    <div class = "row">
+        <div class = "col-xs-10">
+        <h2>
+          {{ page.title }}
+        </h2>
+        </div>
+        <div class = "col-xs-2 editcol">
+        
+        <a href="?view=edit" class = "edit">Edit</a>
+        <!-- 
+        <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a> -->
+        </div>
+    </div>
   </div>
 </div>
 <div class="row">
