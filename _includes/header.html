@@ -1,53 +1,49 @@
-<div class = "header">
-
-<div class = "row headerwrapper">
-    <div class = "col-xs-3 col-sm-2">
-      <a  class = "logolink" href = "{{ site.baseurl }}/"><img class = "logo" src = "{{ site.baseurl }}/img/Logo.svg"></a>
-    </div>
-    <div class = "col-xs-9 col-sm-10 titleandlinks">
-        <div class = "row">
-          <div class ="col-xs-5 title-wrapper">
-              <h1 class = "title">{{ site.title }}</h1>
-          </div>
-          <div class = "col-xs-7 login">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a class = "loginbutton" href="#" data-hook="login-link">RaeaBear <i class="fa fa-caret-down" aria-hidden="true"></i>
+<div class="header">
+    <div class="row headerwrapper">
+        <div class="col-xs-12 titleandlinks">
+            <div class="row">
+                <div class="col-xs-12 title-wrapper">
+                    <a class="logolink" href="{{ site.baseurl }}/"><img class="logo" src="{{ site.baseurl }}/img/Logo.svg"></a>
+                    <div class="nav-wrapper">
+                        <div class="title-wrapper">
+                            <h1 class="title">{{ site.title }}</h1>
+                            <div class="login">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a class="loginbutton" href="#" data-hook="login-link">RaeaBear <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </a></li>
-                <li class="dropdown hidden" data-hook="user-dropdown">
-                  <a href="#" id ="navlink" class="dropdown-toggle" data-hook="user-dropdown-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="user-issue" data-hook="user-issue"><i class="fa fa-exclamation-circle"></i></span>
-                    <span data-hook="user-name">User</span>
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="admin-only" data-hook="admin-link-list-item"><a href="{{ site.baseurl }}/admin/">Administration</a></li>
-                    <li><a href="#" data-hook="logout-link">Logout</a></li>
-                  </ul>
-                </li>
-              </ul>
-          </div>
-        </div>
-        <nav>
-            <div class = "row">
-              <div class = "col-xs-12">
-                <div>
-                  <!-- <a id = "navlink" href="{{ site.baseurl }}/">Welcome</a> -->
+                                    <li class="dropdown hidden" data-hook="user-dropdown">
+                                        <a href="#" id="navlink" class="dropdown-toggle" data-hook="user-dropdown-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <span class="user-issue" data-hook="user-issue"><i class="fa fa-exclamation-circle"></i></span>
+                                            <span data-hook="user-name">User</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="admin-only" data-hook="admin-link-list-item"><a href="{{ site.baseurl }}/admin/">Administration</a></li>
+                                            <li><a href="#" data-hook="logout-link">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <nav>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div>
+                                        <!-- <a id = "navlink" href="{{ site.baseurl }}/">Welcome</a> -->
+                                    </div>
+                                    <ul class="subnav">
+                                        {% for item in site.pages %} {% if item.nav %} {% if page.url == item.url }} %}
+                                        <li class="nav-active"><a id="navlink" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} <span class="sr-only">(current)</span></a></li>
+                                        {% else %}
+                                        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                                        {% endif %} {% endif %} {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-                  <ul class = "subnav">
-                    {% for item in site.pages %}
-                      {% if item.nav %}
-                      {% if page.url == item.url }} %}
-                        <li class="nav-active"><a id="navlink"  href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} <span class="sr-only">(current)</span></a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-                        {% endif %}
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-              </div>
             </div>
-        </nav>
+        </div>
     </div>
-</div>
-
 </div>

@@ -83,17 +83,18 @@ $grey-color: #B8B9B6;
 
   .headerwrapper {
       border-bottom: solid 3px $databutton-color;
-      margin: 0em 1em;
+      margin: 0em 0.5em;
     }
 
     .logo {
-      width: 100%;
       height: 6em;
       padding: 1em 0;
     }
 
    .logolink {
-    float: left;
+      width: 20%;
+      max-width: 80px;
+      float: left;
       text-decoration: none;
       border-bottom: none;
       }
@@ -101,6 +102,21 @@ $grey-color: #B8B9B6;
     .title {
       margin-top: 0em;
       border-bottom: none;
+    }
+
+    .title-wrapper {
+      overflow: hidden;
+      h1 {
+        float: left;
+      }
+      .login {
+        float: right;
+      }
+    }
+
+    .nav-wrapper {
+      float: left;
+      width: 80%;
     }
 
     ul.subnav {
@@ -122,7 +138,7 @@ $grey-color: #B8B9B6;
     }
 
     .login {
-      float: left;
+      float: right;
     }
 
     .nav-active {
