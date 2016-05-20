@@ -182,7 +182,11 @@ nav: true
       <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-      <li> {% for organization in site.organizations %} <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a></li>
+      <li> {% for organization in site.organizations %} 
+      <!-- <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a> -->
+      <a href="{{ site.baseurl }}/organizations/raea/" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a>
+      
+      </li>
     {% endfor %} 
     </ul>
   </div>
