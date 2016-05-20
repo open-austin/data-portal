@@ -183,12 +183,10 @@ a {
     font-weight: bold; }
 .welcome .backtotop {
   background-color: #294B6B;
-  margin: 2em auto;
-  text-align: center; }
-  .welcome .backtotop:hover {
-    background-color: #313131; }
+  margin: 2em auto; }
   .welcome .backtotop h3, .welcome .backtotop i {
-    color: white; }
+    color: white;
+    text-align: center; }
 
 /* Datasets page */
 .adddiv {
