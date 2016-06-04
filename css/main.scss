@@ -61,7 +61,7 @@ $grey-color: #B8B9B6;
     }
     i {
       color: white;
-    }  
+    }
   }
 
 
@@ -160,7 +160,7 @@ $grey-color: #B8B9B6;
       list-style-type: none;
       text-transform: uppercase;
       }
-    
+
 
     ul {
       list-style-type: none;
@@ -179,7 +179,7 @@ $grey-color: #B8B9B6;
       }
     }
 
-    .navbar-right {  
+    .navbar-right {
       li {
         float: right;
       }
@@ -290,7 +290,7 @@ $grey-color: #B8B9B6;
     text-align: center;
     }
   }
-   
+
 }
 
 /* Datasets page */
@@ -452,7 +452,7 @@ a.innerdropdown {
     display: none;
     width: 80%;
     margin-left: 2em;
-    ul { 
+    ul {
       list-style-type: none;
     }
     li {
@@ -711,7 +711,7 @@ a.innerdropdown {
       border-radius: 2px;
       text-decoration: none;
         &:hover {
-        
+
       text-decoration: none;
         background-color: $grey-color;
       }
@@ -930,4 +930,3 @@ p.resourceanswer {
   .theme-gallery .panel-primary {
     border-width: 5px;
   }
-
