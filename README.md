@@ -1,6 +1,10 @@
-My take on the design of JKAN - lightweight, a backend-free open data portal, powered by Jekyll. Learn more in the original .readme [here](https://github.com/timwis/jkan/blob/gh-pages/README.md). 
+My take on the design of JKAN - lightweight, a backend-free open data portal, powered by Jekyll. Learn more in the original .readme [here](https://github.com/timwis/jkan/blob/gh-pages/README.md).
 
 And check out the [existing design](https://open-austin.org/data-portal)
+
+## Get started
+
+To start the site, run `rake run` in the project directory, and when started go to `http://127.0.0.1:4000/data-portal-new/` in your browser.
 
 ## Core Purpose of Site
 
@@ -40,7 +44,7 @@ Notes on similar platform from [Code for America Regional Data Portal Webinar](h
     * Help with projects
 * Threats
     * Licensing Issues w/ Datasets
-    * Complexity 
+    * Complexity
     * Scope Creep
 
 ## Design Challenge:
@@ -61,9 +65,9 @@ Make the design modular so that other cities can fork & replace our content.
 
 As a newbie, I can arrive at the homepage, read about what's going on, see some examples, and feel like I know how to get started.
 
-As a visitor, I can go straight to the portal page to accomplish my task. 
+As a visitor, I can go straight to the portal page to accomplish my task.
 
-As a visitor, I can browse datasets by category and contributor. 
+As a visitor, I can browse datasets by category and contributor.
 
 As a visitor, I can view projects which correspond to a dataset.
 
@@ -83,13 +87,13 @@ As a contributor, I can link to a project I made using a dataset.
 
 Staying consistent with [Open Austin branding](http://www.open-austin.org/) makes a lot of sense.
 
-[The Opportunity Project](http://opportunity.census.gov/) provides examples of projects to demonstrate the value of open data. 
+[The Opportunity Project](http://opportunity.census.gov/) provides examples of projects to demonstrate the value of open data.
 
 The [City of New York](https://data.cityofnewyork.us/data?cat=public%20safety) data portal is built on socrata but has designed around that. They must be doing something right since they are the #1 place in the US for [open city data](http://us-city.census.okfn.org/).
 
 ## Sketches
 
-I decided to build out a homepage and resources page in addition to the portal. 
+I decided to build out a homepage and resources page in addition to the portal.
 
 #### Small
 ![](https://github.com/amaliebarras/data-portal-new/blob/gh-pages/Research/sketches/MobileSketches.png)
