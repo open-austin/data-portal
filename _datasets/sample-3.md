@@ -3,7 +3,7 @@ schema: default
 title: Sample dataset 3
 organization: Sample Department
 notes: This is an example dataset that comes with a new installation of JKAN
-score: 95%
+upratings: 500
 ratings: 770
 resources:
   - name: Air Monitoring Stations CSV

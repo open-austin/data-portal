@@ -1,6 +1,10 @@
-export default (data) => (
-`<dataset>
+export default (data) => {
 
+// do score calculation here!
+let score = Math.ceil((data.upratings / data.ratings) * 100);
+
+return `
+<dataset>
 <div class="row">
     <div class="col-xs-12">
         <div class="exampletile">
@@ -13,7 +17,7 @@ export default (data) => (
                 <div class="row">
                     <div class="col-xs-5">
                         <div class="score">
-                            <h1>${data.score || 'N/A'}</h1>
+                            <h1>${score || 'N/A'}%</h1>
                         </div>
                         <div class="ratings">
                             <p class = "whitetext"><span>${data.ratings || '0'}</span> ratings</p>
@@ -34,6 +38,5 @@ export default (data) => (
         </div>
     </div>
 </div>
-
 </dataset>`
-)
+}
