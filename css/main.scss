@@ -391,6 +391,10 @@ a.innerdropdown {
   margin: 0 1em;
 }
 
+.exampletile {
+  margin-bottom: 1em;
+}
+
 .examples {
   padding-top: 1em;
 }
@@ -481,11 +485,10 @@ a.innerdropdown {
 
 /* datasets */
 
-/*dataset {
+.dataset-wrapper {
   display: block;
-  padding: 1em;
   margin-bottom: 1em;
-}*/
+}
 
 .score h1 {
   margin-top: 0;
@@ -569,6 +572,7 @@ a.innerdropdown {
 
   #datasetexampletile {
     padding: 0;
+    margin-bottom: 1em;
   }
 
     .edit {
@@ -855,14 +859,6 @@ p.resourceanswer {
 
   .add-dataset-btn {
     margin-top: 15px;
-  }
-
-  .dataset-wrapper {
-    background-color: #efefef;
-
-    p {
-      color: red;
-    }
   }
 
   /* Hidden from guests */
