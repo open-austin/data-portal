@@ -258,10 +258,17 @@ a.browseselect {
 
 .innerdropdown {
   display: inline; }
+  .innerdropdown a {
+    text-align: left;
+    float: left; }
+    .innerdropdown a:hover {
+      background-color: #EDEFF3; }
+  .innerdropdown p {
+    float: left;
+    text-align: left; }
 
 a.innerdropdown {
   text-align: left;
-  width: 100%;
   padding: 0.20em; }
 
 .icon {
@@ -552,6 +559,10 @@ select[class="form-control"] {
   margin-top: 1em;
   background-color: #EDEFF3;
   padding: 1em; }
+
+.exampleimage {
+  float: left;
+  width: 100%; }
 
 .question {
   padding: 1em; }

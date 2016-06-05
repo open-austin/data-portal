@@ -180,8 +180,8 @@ nav: true
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
       <li> {% for organization in site.organizations %} 
-      <!-- <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a> -->
-      <a href="{{ site.baseurl }}/organizations/raea/" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a>
+      <!-- <a href="{{ site.baseurl }}/organizations/{{ organization.url }}/" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a> -->
+      <a href="{{ site.baseurl }}/{{ organization.url}}" class="innerdropdown" title="{{ logo_alt }}"> <p>{{ organization.title }}</p></a>
       
       </li>
     {% endfor %} 

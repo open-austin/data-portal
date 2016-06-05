@@ -377,12 +377,22 @@ margin: 0em 2em;
 }
 
 .innerdropdown {
+  a {
+    text-align: left;
+    float: left;
+      &:hover {
+      background-color: $background-color;
+    }
+  }
   display: inline;
+  p {
+    float: left;
+    text-align: left;
+  }
 }
 
 a.innerdropdown {
  text-align: left;
- width: 100%;
  padding: 0.20em;
 }
 
@@ -764,6 +774,12 @@ select[class="form-control"]{
   background-color: $background-color;
   padding: 1em;
 }
+
+ .exampleimage {
+    float: left;
+    width: 100%;
+  }
+
 
 .question {
   padding: 1em;
