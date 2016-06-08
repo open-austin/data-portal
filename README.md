@@ -4,7 +4,7 @@ And check out the [existing design](https://open-austin.org/data-portal)
 
 ## Get started
 
-To start the site, run `rake run` in the project directory, and when started go to `http://127.0.0.1:4000/data-portal-new/` in your browser.
+To start the site, run `gem install bundler` in the project directory. Once it is complete, run `rake run` and when started go to `http://127.0.0.1:4000/data-portal-new/` in your browser.
 
 ## Core Purpose of Site
 
