@@ -1,4 +1,4 @@
-My take on the design of JKAN - lightweight, a backend-free open data portal, powered by Jekyll. Learn more in the original .readme [here](https://github.com/timwis/jkan/blob/gh-pages/README.md).
+My take on the design of JKAN - a lightweight, backend-free open data portal, powered by Jekyll. Learn more about JKAN in the original .readme [here](https://github.com/timwis/jkan/blob/gh-pages/README.md).
 
 And check out the [existing design](https://open-austin.org/data-portal)
 
