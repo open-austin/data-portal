@@ -78,3 +78,13 @@ category_fields:
   - field_name: featured
     label: Featured on Homepage
     form_template: form/checkbox.html
+
+project_fields:
+  - field_name: title
+    label: title
+  - field_name: imageurl
+    label: imageurl
+  - field_name: projecturl
+    label: Project URL
+  - field_name: projdescription
+    label: Project Description
