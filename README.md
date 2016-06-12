@@ -1,4 +1,4 @@
-My take on the design of JKAN - lightweight, a backend-free open data portal, powered by Jekyll. Learn more in the original .readme [here](https://github.com/timwis/jkan/blob/gh-pages/README.md).
+My take on the design of JKAN - a lightweight, backend-free open data portal, powered by Jekyll. Learn more about JKAN in the original .readme [here](https://github.com/timwis/jkan/blob/gh-pages/README.md).
 
 Read more about the project idea and history [here](https://github.com/open-austin/project-ideas/issues/66)
 
@@ -6,7 +6,7 @@ And check out the [existing design](https://open-austin.org/data-portal)
 
 ## Get started
 
-To start the site, run `rake run` in the project directory, and when started go to `http://127.0.0.1:4000/data-portal-new/` in your browser.
+To start the site, run `gem install bundler` in the project directory. Once it is complete, run `rake run` and when started go to `http://127.0.0.1:4000/data-portal-new/` in your browser.
 
 ## Core Purpose of Site
 
