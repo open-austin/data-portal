@@ -8,10 +8,12 @@ dataset_fields:
     label: Organization
     form_template: form/organization.html
     datajson: publisher.name
-  - field_name: score
-    label: Score
+  - field_name: upratings
+    label: Upratings
+    datajson: upratings
   - field_name: ratings
     label: Ratings
+    datajson: ratings
   - field_name: notes
     label: Description
     form_template: form/textarea.html
@@ -76,3 +78,13 @@ category_fields:
   - field_name: featured
     label: Featured on Homepage
     form_template: form/checkbox.html
+
+project_fields:
+  - field_name: title
+    label: title
+  - field_name: imageurl
+    label: imageurl
+  - field_name: projecturl
+    label: Project URL
+  - field_name: projdescription
+    label: Project Description

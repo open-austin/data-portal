@@ -5,11 +5,9 @@ permalink: /datasets/
 nav: true
 ---
 
-<section>
-
 <div class ="row">
   <div class ="col-xs-8">
-  <h2>Datasets</h2>
+    <h2>Datasets</h2>
   </div>
   <div class ="col-xs-4 adddiv">
      <a class = "add-dataset" href="{{ site.baseurl }}/add-dataset/" data-hook="add-dataset-btn">Add <i class="fa fa-plus"></i></a>
@@ -19,13 +17,12 @@ nav: true
 
 <div class="row">
   <div class="col-xs-12 search">
-  <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
+    <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
   </div>
 </div>
 
 <div class = "row">
-  <div class = "browse col-xs-12">
-
+    <div class = "browse col-xs-12">
       <div class = "row">
         <div class = "col-xs-12">
           <h4 class = "browsetext">BROWSE BY:</h4>
@@ -34,12 +31,12 @@ nav: true
 
       <div class = "row">
           <div class = "col-xs-12">
-          <a href = "#" class = "browseselect selectcategories" id="cat-button">CATEGORIES</a>
-          <a href = "#" class =  "browseselect selectcontributors" id="cont-button">CONTRIBUTORS</a>
-        </div>
+           <a href = "#" class = "browseselect selectcategories" id="cat-button">CATEGORIES</a>
+            <a href = "#" class =  "browseselect selectcontributors" id="cont-button">CONTRIBUTORS</a>
+          </div>
       </div>
 
-  </div>
+    </div>
 </div>
 
 <!--bootstrap toggle with data hookz-->
@@ -183,8 +180,8 @@ nav: true
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
       <li> {% for organization in site.organizations %} 
-      <!-- <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a> -->
-      <a href="{{ site.baseurl }}/organizations/raea/" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a>
+      <!-- <a href="{{ site.baseurl }}/organizations/{{ organization.url }}/" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a> -->
+      <a href="{{ site.baseurl }}/{{ organization.url}}" class="innerdropdown" title="{{ logo_alt }}"> <p>{{ organization.title }}</p></a>
       
       </li>
     {% endfor %} 
@@ -194,38 +191,15 @@ nav: true
 
 <div class = "row">
   <div class="col-xs-12" data-component="datasets-list">
-   <!--  <h3 class="datasets-count" data-hook="datasets-count"></h3> -->
-    <h3> 3 Datasets</h3>
+    <h3 class="datasets-count" data-hook="datasets-count"></h3>
   </div>
-</div>
 
- <div class = "orgexample">   
-    <a href = "{{ site.baseurl }}/datasets/sample-3/">
-    {% include datasettile.html %}
-    </a>
-</div>
-
-<div class = "orgexample">
-     <a href = "{{ site.baseurl }}/datasets/sample-3/">
-    {% include datasettile.html %}
-    </a>
-</div>
-<div class = "orgexample">
-     <a href = "{{ site.baseurl }}/datasets/sample-3/">
-    {% include datasettile.html %}
-    </a>
-</div>
-
-
-
- <!--  <div class="col-xs-12 col-md-6" data-component="datasets-list">
-  <div class="dataset-wrapper">
-    <div data-hook="datasets-items">
+  <div class="col-xs-12 col-md-6" data-component="datasets-list">
+    <div class="dataset-wrapper">
+      <div data-hook="datasets-items">
+      </div>
     </div>
-    </div>
-  </div> -->
-
-
-</section>
+  </div> 
+</div>
 
 

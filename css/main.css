@@ -258,15 +258,25 @@ a.browseselect {
 
 .innerdropdown {
   display: inline; }
+  .innerdropdown a {
+    text-align: left;
+    float: left; }
+    .innerdropdown a:hover {
+      background-color: #EDEFF3; }
+  .innerdropdown p {
+    float: left;
+    text-align: left; }
 
 a.innerdropdown {
   text-align: left;
-  width: 100%;
   padding: 0.20em; }
 
 .icon {
   width: 2em;
   margin: 0 1em; }
+
+.exampletile {
+  margin-bottom: 1em; }
 
 .examples {
   padding-top: 1em; }
@@ -338,11 +348,10 @@ a.innerdropdown {
     background-color: #B8B9B6; }
 
 /* datasets */
-/*dataset {
+.dataset-wrapper {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-}*/
+  margin-bottom: 1em; }
+
 .score h1 {
   margin-top: 0;
   padding: 0.75em 0.5em;
@@ -410,7 +419,8 @@ a.innerdropdown {
     color: #EA4FBF;
     font-weight: bold; }
   .topsection #datasetexampletile {
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 1em; }
   .topsection .edit {
     float: right;
     padding: 0.25em 1em;
@@ -550,6 +560,10 @@ select[class="form-control"] {
   background-color: #EDEFF3;
   padding: 1em; }
 
+.exampleimage {
+  float: left;
+  width: 100%; }
+
 .question {
   padding: 1em; }
   .question h3 {
@@ -624,11 +638,6 @@ p.resourceanswer {
 
 .add-dataset-btn {
   margin-top: 15px; }
-
-.dataset-wrapper {
-  background-color: #efefef; }
-  .dataset-wrapper p {
-    color: red; }
 
 /* Hidden from guests */
 .user-issue,

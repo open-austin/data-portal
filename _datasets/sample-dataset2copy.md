@@ -3,8 +3,8 @@ schema: default
 title: Sample dataset 2
 organization: Sample Department
 notes: This is an example dataset that comes with a new installation of JKAN
-score: 95%
-ratings: 20
+upratings: 50
+ratings: 77
 resources:
   - name: Air Monitoring Stations CSV
     url: 'http://data.phl.opendata.arcgis.com/datasets/1839b35258604422b0b520cbb668df0d_0.csv'

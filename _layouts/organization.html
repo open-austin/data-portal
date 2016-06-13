@@ -45,8 +45,18 @@ layout: default
             <div data-hook="datasets-items"></div>
         </div>
         <div class="orgexample">
-            {% include datasettile.html %}
-            {% include datasettile.html %}
+            <div class = "row">
+                <div class="col-xs-12" data-component="datasets-list">
+                    <h3 class="datasets-count" data-hook="datasets-count"></h3>
+                </div>
+
+              <div class="col-xs-12" data-component="datasets-list">
+                <div class="dataset-wrapper">
+                  <div data-hook="datasets-items">
+                  </div>
+                    </div>
+                  </div> 
+                </div>
         </div>
     </div>
     
