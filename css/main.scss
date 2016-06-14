@@ -571,6 +571,7 @@ a.innerdropdown {
 
 /* dataset page */
 
+
 .topsection {
   background-color: $background-color;
   padding: 1em;
@@ -644,7 +645,7 @@ a.innerdropdown {
     }
 
   .datafiles {
-    padding: 0 1em 1em 1em;
+    padding: 0 0em 1em 1em;
     float: left;
     max-width: 28em;
     margin-bottom: 1em;
@@ -652,28 +653,35 @@ a.innerdropdown {
     font-size: 1.5em;
     margin-right: 0.25em;
     }
-    a {
+    a.filelink {
     border: solid 2px $databutton-color;
     text-align: left;
-    margin-top: 1em;
+    margin-bottom: 0em;
     padding: 0 0.5em;
     border-radius: 2px;
-    float: left;
-    display: inline;
+    width: 100%;
+    display: block;
     text-decoration: none;
       &:hover {
         background-color: $grey-color;
       }
     }
-
+    .filewrapper {
+      margin-top: 0em;
+      margin-bottom: 1em;
+    }
     h4 {
     text-transform: uppercase;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 }
 
   table {
     color: #313131;
-    margin-top: 1em;
       background-color: white;
   }
 
