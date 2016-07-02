@@ -65,6 +65,8 @@ a {
   float: left;
   text-decoration: none;
   border-bottom: none; }
+  .header .logolink:hover {
+    border-bottom: none; }
 .header .title {
   margin-top: 0em;
   border-bottom: none; }
@@ -462,29 +464,35 @@ a.innerdropdown {
   .topsection .rate h1 {
     text-align: left; }
   .topsection .datafiles {
-    padding: 0 1em 1em 1em;
+    padding: 0 0em 1em 1em;
     float: left;
     max-width: 28em;
     margin-bottom: 1em; }
     .topsection .datafiles i {
       font-size: 1.5em;
       margin-right: 0.25em; }
-    .topsection .datafiles a {
+    .topsection .datafiles a.filelink {
       border: solid 2px #294B6B;
       text-align: left;
-      margin-top: 1em;
+      margin-bottom: 0em;
       padding: 0 0.5em;
       border-radius: 2px;
-      float: left;
-      display: inline;
+      width: 100%;
+      display: block;
       text-decoration: none; }
-      .topsection .datafiles a:hover {
+      .topsection .datafiles a.filelink:hover {
         background-color: #B8B9B6; }
+    .topsection .datafiles .filewrapper {
+      margin-top: 0em;
+      margin-bottom: 1em; }
     .topsection .datafiles h4 {
       text-transform: uppercase; }
+    .topsection .datafiles ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
   .topsection table {
     color: #313131;
-    margin-top: 1em;
     background-color: white; }
   .topsection th {
     font-weight: normal; }
