@@ -97,6 +97,9 @@ $grey-color: #B8B9B6;
       float: left;
       text-decoration: none;
       border-bottom: none;
+      &:hover{
+      border-bottom: none;
+      }
       }
 
     .title {
@@ -733,8 +736,7 @@ a.innerdropdown {
       border-radius: 2px;
       text-decoration: none;
         &:hover {
-
-      text-decoration: none;
+        text-decoration: none;
         background-color: $grey-color;
       }
         h4 {

@@ -65,6 +65,8 @@ a {
   float: left;
   text-decoration: none;
   border-bottom: none; }
+  .header .logolink:hover {
+    border-bottom: none; }
 .header .title {
   margin-top: 0em;
   border-bottom: none; }
