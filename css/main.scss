@@ -67,6 +67,75 @@ $grey-color: #B8B9B6;
 
 /* Specific Styling */
 
+/*globalnav*/
+
+.site-nav {
+  display: inline;
+  float: right;
+}
+
+@media screen and (max-width: 768px){
+
+.site-nav {
+    display: none;
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background-color: #fdfdfd;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px 16px;
+    float: right;
+    line-height: 55px;
+    padding: 8.8px 0;
+  }
+}
+
+
+.header-wrapper {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: solid 5px #ea6036;
+  display: block;
+  box-sizing: border-box;
+  .logoandlink {
+    float: left;
+    display: block;
+    padding-top: 1em;
+    img {
+      height: 2em;
+    }
+    .site-title {
+      font-size: 2em;
+      margin-top: 2em;
+      text-decoration: none;
+      .site-title-text {
+        font-family: raleway;
+        color: #5D5D5D;
+        text-decoration: none;
+        &:hover {
+          color: #ea6036;
+        }
+      }
+    }
+  }
+  .links {
+    display: block;
+    padding-top: 2em;
+    float: right;
+    .page-link {
+      margin-left: 0.5em;
+      text-decoration: none;
+      color: #2d2d2d;
+       &:hover {
+          color: #ea6036;
+          border-bottom: solid 1px #ea6036; 
+        }
+    }
+  }
+}
+
   /* Nav */
 
 .header {
