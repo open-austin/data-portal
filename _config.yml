@@ -1,7 +1,7 @@
 title: PANDA
 greeting: Welcome to PANDA!
 description: The People of Austin's Network for Data Access
-baseurl: /data-portal-new
+baseurl: /data-portal
 
 # Site theme
 theme: Lumen

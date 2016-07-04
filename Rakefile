@@ -15,5 +15,5 @@ task :run do
   end
 
   puts "Running now, check out: \"http://127.0.0.1:4000/data-portal-new/\"\n\n"
-  system 'bundle exec jekyll serve --watch --incremental'
+  system 'bundle exec jekyll serve --watch --incremental --config _config.yml,_config_localhost.yml'
 end
