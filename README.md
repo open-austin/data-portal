@@ -2,11 +2,11 @@ My take on the design of JKAN - a lightweight, backend-free open data portal, po
 
 Read more about the project idea and history [here](https://github.com/open-austin/project-ideas/issues/66)
 
-And check out the [existing design](https://open-austin.org/data-portal)
+And check out the [existing design](https://www.open-austin.org/data-portal)
 
 ## Get started
 
-To start the site, run `gem install bundler` in the project directory. Once it is complete, run `rake run` and when started go to `http://127.0.0.1:4000/data-portal-new/` in your browser.
+To start the site, run `gem install bundler` in the project directory. Once it is complete, run `rake run` and when started go to `http://127.0.0.1:4000/data-portal/` in your browser.
 
 ## Core Purpose of Site
 
