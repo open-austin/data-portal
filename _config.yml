@@ -7,8 +7,8 @@ baseurl: /data-portal
 theme: Lumen
 
 # Authentication
-github_client_id: a26cf0d40dab0bb5c32f
-gatekeeper_host: https://open-data-new-local.herokuapp.com
+github_client_id: ab6c35c85f1962157f9c
+gatekeeper_host: https://open-austin-jkan-gatekeeper.herokuapp.com
 
 # Dataset schema
 schema: default
