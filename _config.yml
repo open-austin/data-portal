@@ -10,6 +10,10 @@ theme: Lumen
 github_client_id: ab6c35c85f1962157f9c
 gatekeeper_host: https://open-austin-jkan-gatekeeper.herokuapp.com
 
+# Allow setting repoName and repoOwner (mostly useful for developing on localhost) 
+# if null, then it will be pulled from whichever repo is being used to host gh-pages
+github_repo: null
+
 # Dataset schema
 schema: default
 
