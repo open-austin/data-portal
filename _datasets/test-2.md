@@ -1,8 +1,8 @@
 ---
 schema: default
-title: test
+title: test 2
 organization: Sample Department
-notes: "test\r\nedit"
+notes: ''
 proprietaryRed: ''
 difficulty: ''
 license: ''
