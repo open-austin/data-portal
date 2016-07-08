@@ -2,7 +2,7 @@
 schema: default
 title: test
 organization: Sample Department
-notes: test
+notes: "test\r\nedit"
 proprietaryRed: ''
 difficulty: ''
 license: ''
