@@ -8,6 +8,13 @@ And check out the [existing design](https://www.open-austin.org/data-portal)
 
 To start the site, run `gem install bundler` in the project directory. Once it is complete, run `rake run` and when started go to `http://127.0.0.1:4000/data-portal/` in your browser.
 
+## Rebuilding assets for production builds
+
+If you've edited any of the static assets, you may need to run `npm run build`
+to rebuild the asset bundle to get those changes to show up up on the
+github-pages hosted site. After building the bundle, commit the bundle file(s)
+(i.e. `bundle.js`) and push to github to make the changes live.
+
 ## Core Purpose of Site
 
 Enable folks to learn about, discover, and post links to open data.
