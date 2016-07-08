@@ -41,7 +41,7 @@ export default State.extend({
   save: function (contents, commitMsg) {
     return new Promise((resolve, reject) => {
       if (!commitMsg) commitMsg = `Updated ${this.fileName}`
-      this.repo.write(this.repoBranch, this.filePath, contents, commitMsg, {}, (err, data) => {
+      this.repo.writeFile(this.repoBranch, this.filePath, contents, commitMsg, {}, (err, data) => {
         if (err) reject(err)
         else resolve(data)
       })
