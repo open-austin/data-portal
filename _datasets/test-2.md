@@ -2,7 +2,7 @@
 schema: default
 title: test 2
 organization: Sample Department
-notes: ''
+notes: edits
 proprietaryRed: ''
 difficulty: ''
 license: ''
