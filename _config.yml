@@ -73,6 +73,10 @@ twittercard:
 opengraph:
   enabled: true
 
+#Disqus
+  disqus_shortname: pandaatx
+  comments_enabled: true
+
 # Exclude these files from the build
 exclude:
   - Gemfile
