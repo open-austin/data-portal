@@ -1,2 +1,6 @@
 github_client_id: b4978d3f1b50643545af
 gatekeeper_host: https://oa-jkan-gatekeeper-localhost.herokuapp.com
+
+github_repo:
+  owner: 'open-austin'
+  name: 'data-portal'

@@ -123,12 +123,10 @@ a {
 .header .title {
   margin-top: 0em;
   border-bottom: none; }
-.header .title-wrapper {
-  overflow: hidden; }
-  .header .title-wrapper h1 {
-    float: left; }
-  .header .title-wrapper .login {
-    float: right; }
+.header .title-wrapper h1 {
+  float: left; }
+.header .title-wrapper .login {
+  float: right; }
 .header .nav-wrapper {
   float: left;
   width: 80%; }
