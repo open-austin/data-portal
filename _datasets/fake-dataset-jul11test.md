@@ -10,11 +10,11 @@ resources:
   - name: ''
     url: ''
     format: ''
-proprietaryRed: 'false'
+proprietaryRed: ''
 difficulty: ready to use
 license: 'https://creativecommons.org/licenses/by/4.0/'
 category:
-  - Government
+  - Planning
 maintainer: Amalie Barras
 maintainer_email: amaliebarras@gmail.com
 ---
