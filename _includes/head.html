@@ -1,74 +1,95 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  {% assign theme_name = site.theme | default: 'Default' %}
-  {% assign theme = site.data.themes | where:'name', theme_name | first %}
-  {% if theme and theme.src and theme.src != empty %}
+{% comment %} -- head.html -- {% endcomment %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+{% comment %} -- favicon -- {% endcomment %}
+<link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="mask-icon" href="{{ site.baseurl }}/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="OA Data">
+<meta name="application-name" content="OA Data">
+<meta name="msapplication-config" content="{{ site.baseurl }}/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+{% comment %} -- css -- {% endcomment %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+{% assign theme_name = site.theme | default: 'Default' %}
+{% assign theme = site.data.themes | where:'name', theme_name | first %}
+{% if theme and theme.src and theme.src != empty %}
   <link rel="stylesheet" href="{{ theme.src }}">
-  {% endif %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notie/3.0.0/notie.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notie/3.0.0/notie.min.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+{% comment %} -- Open Graph Metadata -- https://developers.facebook.com/tools/debug/ -- {% endcomment %}
+{% if site.opengraph.enabled == true %}
+  {% assign description = page.notes | default: site.description %}
+  {% assign title = page.title | default: site.title %}
+  {% assign logo = page.logo | default: "/favicon/android-chrome-192x192.png" %}
+  <meta property="og:description" content="{{ description | truncate: 255 }}" />
+  <meta property="og:title" content="{{ title | truncate: 80 }}" />
+  <meta name="og:image" content="{{ site.baseurl }}{{ logo }}" />
+  <meta property="og:image:width" content="192"/>
+  <meta property="og:image:height" content="192"/>
+  <meta property="og:site_name" content="{{ site.title }}" />
+{% endif %}
 
+{% comment %} -- JS libraries -- {% endcomment %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
-  {% if site.digital_analytics_program.enabled == true %}
-    <!-- US Digital Analytics Program - see https://analytics.usa.gov for data-->
-
+{% comment %} -- US Digital Analytics Program see https://analytics.usa.gov for data {% endcomment %}
+{% if site.digital_analytics_program.enabled == true %}
   <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency={{ site.digital_analytics_program.agency }}&subagency={{ site.digital_analytics_program.subagency }}"></script>
+{% endif %}
+
+{% comment %} -- Google Analytics -- {% endcomment %}
+{% if site.google_analytics.enabled == true %}
+  {% include addons/google-analytics.html %}
+{% endif %}
+
+{% comment %} -- Hypothesis.io -- {% endcomment %}
+{% if site.hypothesis.enabled == true %}
+  <script async defer src="//hypothes.is/embed.js"></script>
+{% endif %}
+
+{% comment %} -- Twittercard -- {% endcomment %}
+{% if site.twittercard.enabled == true %}
+  {% include addons/twittercard.html %}
+{% endif %}
+
+<script>
+var settings = {
+  BASE_URL: {{ site.baseurl | jsonify }},
+  PAGE_URL: {{ page.url | jsonify }},
+  REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
+  {% if site.github_repo %}
+    REPO_OWNER: {{ site.github_repo.owner | jsonify }},
+    REPO_NAME: {{ site.github_repo.name | jsonify }},
+   {% else  %}
+    REPO_OWNER: {{ site.github.owner_name | jsonify }},
+    REPO_NAME: {{ site.github.project_title | jsonify }},
   {% endif %}
+  GITHUB_CLIENT_ID: {{ site.github_client_id | jsonify }},
+  GATEKEEPER_HOST: {{ site.gatekeeper_host | jsonify }}
+}
+</script>
 
-  {% if site.google_analytics.enabled == true %}
-    <!-- Google Analytics -->
-    {% include addons/google-analytics.html %}
-  {% endif %}
-
-  {% if site.hypothesis.enabled == true %}
-    <!-- Hypothesis.io -->
-    <script async defer src="//hypothes.is/embed.js"></script>
-  {% endif %}
-
-  {% if site.opengraph.enabled == true %}
-    <!-- Open Graph -->
-    {% include addons/opengraph.html %}
-  {% endif %}
-
-  {% if site.twittercard.enabled == true %}
-    <!-- Twittercard -->
-    {% include addons/twittercard.html %}
-  {% endif %}
-
-  <script>
-  var settings = {
-    BASE_URL: {{ site.baseurl | jsonify }},
-    PAGE_URL: {{ page.url | jsonify }},
-    REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
-    {% if site.github_repo %}
-      REPO_OWNER: {{ site.github_repo.owner | jsonify }},
-      REPO_NAME: {{ site.github_repo.name | jsonify }},
-     {% else  %}
-      REPO_OWNER: {{ site.github.owner_name | jsonify }},
-      REPO_NAME: {{ site.github.project_title | jsonify }},
-    {% endif %}
-    GITHUB_CLIENT_ID: {{ site.github_client_id | jsonify }},
-    GATEKEEPER_HOST: {{ site.gatekeeper_host | jsonify }}
-  }
-  </script>
-  <script>
-     $(function() {
-        $('#nav li a').click(function() {
-           $('#nav li').removeClass();
-           $($(this).attr('href')).addClass('active');
-        });
-     });
-  </script>
-
-</head>
+<script>
+   $(function() {
+      $('#nav li a').click(function() {
+         $('#nav li').removeClass();
+         $($(this).attr('href')).addClass('active');
+      });
+   });
+</script>
