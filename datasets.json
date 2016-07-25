@@ -3,6 +3,7 @@
 [{% for dataset in site.datasets %}
   {
     "title": {{ dataset.title | jsonify }},
+    "difficulty": {{dataset.difficulty | jsonify }},
     "upratings": {{ dataset.upratings | jsonify }},
     "ratings": {{ dataset.ratings | jsonify }},
     "organization": {{ dataset.organization | jsonify }}{% if dataset.notes != "" %},
