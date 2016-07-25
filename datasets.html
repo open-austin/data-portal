@@ -10,7 +10,7 @@ nav: true
     <h2>Datasets</h2>
   </div>
   <div class ="col-xs-4 adddiv">
-     <a class = "add-dataset" href="{{ site.baseurl }}/add-dataset/" data-hook="add-dataset-btn">Add Dataset <i class="fa fa-plus"></i></a>
+     <a class = "add-dataset pull-right admin-only" href="{{ site.baseurl }}/add-dataset/" data-hook="add-dataset-btn">Add Dataset <i class="fa fa-plus"></i></a>
   </div>
 </div>
 
@@ -18,6 +18,8 @@ nav: true
   <div class="col-xs-12 search">
     <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
   </div>
+  <div data-hook="datasets-items"></div>
+
 </div>
 
 <div class = "row">

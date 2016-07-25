@@ -23,7 +23,6 @@ comments: true
             <span>
               <h3 property="dct:title">{{ page.title }}</h3>
                <div class = "contributedby"><p>Contributed by: <a class = "contributedby" href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}" class="thumbnail">{{ organization.title }}</a></p></div>
-              <a href="?view=edit" class="exampletitlelink pull-right btn btn-default admin-only" data-hook="edit-dataset-btn">Edit</a>
             </span>
           </div>
           <div class="col-xs-2">
@@ -168,14 +167,17 @@ comments: true
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
 
+
 <div class="row" data-hook="view" data-view="edit">
-  <div class="col-sm-8 col-sm-offset-2">
+    <div class="col-sm-8 col-sm-offset-2">
       {% include dataset-form.html dataset=page %}
-  </div>
-  <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
       <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
-  </div>
+    </div>
 </div>
+
+
 
 
 
