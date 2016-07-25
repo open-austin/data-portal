@@ -6,62 +6,70 @@ nav: true
 ---
 
 <div class="welcome">
-<div class="row intro">
-  <div class = "row titlewrapper">
-    <div class = "col-xs-12">
-      <h2>{{ site.greeting }}</h2>
-       <h4 class = "descrip">
-        {{ site.description }}
-      </h4>
+  <div class="row intro">
+
+    <div class = "row titlewrapper">
+      <div class = "col-xs-12">
+        <h2>{{ site.greeting }}</h2>
+         <h4 class = "descrip">
+          {{ site.description }}
+        </h4>
+      </div>
     </div>
-  </div>
-  <div class = "row description">
-    <div class = "col-xs-12 col-sm-8 col-sm-offset-2">
-          <p class = "">
-            In this portal live links to a ton of fascinating datasets related to the place you live, and it’s all completely free for you to use and make awesome stuff with. 
+
+    <div class = "row description">
+      <div class = "col-xs-12 col-sm-8 col-sm-offset-2">
+            <p class = "">
+              In this portal live links to a ton of fascinating datasets related to the place you live, and it’s all completely free for you to use and make awesome stuff with. 
+            </p>
+      </div>
+    </div>
+
+    <div class = "row threethings">
+      <div class = "col-xs-12">
+
+        <div class = "three things">
+          <p class = "info-tiles">
+            <div class = "row">
+              <div class = "thing col-xs-4 col-sm-3 col-sm-offset-1">
+                <h6>
+                  <i class="fa fa-search" aria-hidden="true"></i></h6>
+                  <h4>Find</h4>
+                  <p>datasets by category, contributor, and score</p>
+              </div>
+              <div class = "thing col-xs-4 col-sm-4">
+                  <h6><i class="fa fa-lightbulb-o" aria-hidden="true"></i></h6>
+                 <h4>Learn</h4>
+                  <p>about and discover tools to move projects along</p>
+              </div>
+              <div class = "thing col-xs-4 col-sm-3">
+                <h6><i class="fa fa-plus" aria-hidden="true"></i></h6>
+                <h4>Add</h4>
+                <p>open data links and projects</p>
+              </div>
+            </div>
+            <div class = "row">
+              <div class = "col-xs-12 firstbutton">
+                  <a href="{{ site.baseurl }}/datasets" class ="gotoportal" role="button">Go To Portal</a>
+              </div>
+            </div>
           </p>
-    </div>
-  </div>
-  <div class = "row threethings">
-    <div class = "col-xs-12">
-      <div class = "three things">
-        <p class = "info-tiles">
-          <div class = "row">
-            <div class = "thing col-xs-4 col-sm-3 col-sm-offset-1">
-              <h6>
-                <i class="fa fa-search" aria-hidden="true"></i></h6>
-                <h4>Find</h4>
-                <p>datasets by category, contributor, and score</p>
-            </div>
-            <div class = "thing col-xs-4 col-sm-4">
-                <h6><i class="fa fa-lightbulb-o" aria-hidden="true"></i></h6>
-               <h4>Learn</h4>
-                <p>about and discover tools to move projects along</p>
-            </div>
-            <div class = "thing col-xs-4 col-sm-3">
-              <h6><i class="fa fa-plus" aria-hidden="true"></i></h6>
-              <h4>Add</h4>
-              <p>open data links and projects</p>
-            </div>
-          </div>
-          <div class = "row">
-            <div class = "col-xs-12 firstbutton">
-                <a href="{{ site.baseurl }}/datasets" class ="gotoportal" role="button">Go To Portal</a>
-            </div>
-          </div>
-        </p>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
+
 
 <div class = "row examplesandgetstarted">
   <div class = "col-xs-12 col-sm-8">
+
     <div class = "row exampletitle">
       <div class = "col-xs-12">
         <h3>Example Projects</h3>
       </div>
     </div>
+
     <div class = "row explanation">
       <div class = "col-xs-12">
         <p>Here are a few ways people around you are using open data to make Austin awesome.</p>
@@ -71,6 +79,7 @@ nav: true
 
     <div class = "row examples">  
       <div class = "col-xs-12">
+
         <div class = "row example">
           <div class = "col-xs-6">
             <div class = "exampleimage">
@@ -116,25 +125,28 @@ nav: true
 
         <div class = "row viewmoreexamples">
           <div class = "col-xs-12">
-            <a href = "http://www.open-austin.org/projects/">View More Examples...</a>
+            <h4><a href = "http://www.open-austin.org/projects/">View More Examples...</a></h4>
           </div>
         </div>
+
       </div>
     </div>
   </div>
-
-  <div class = "col-xs-12 col-sm-4">
-    <div class = "getstarted">    
-        <h3>Ready to get started?</h3>
-        <br>
-        <div class = "col-xs-8 col-xs-offset-2">
-            <p class = "center">Learn how to start a project or become a contributor</p><br>
-            <a class = "center" href = "{{ site.baseurl }}/resources">Resources</a><br><br><br>
-            <p class = "center">Or jump right in and browse the datasets</p><br>
-            <a class = "center" href = "{{ site.baseurl }}/datasets">Go to Data</a>
+      <div class = "col-xs-12 col-sm-4">
+        <div class = "getstarted">    
+            <h3>Ready to get started?</h3>
+            <br>
+            <div class = "col-xs-8 col-xs-offset-2">
+                <p class = "center">Learn how to start a project or become a contributor</p><br>
+                <a class = "center" href = "{{ site.baseurl }}/resources">Resources</a><br><br><br>
+                <p class = "center">Or jump right in and browse the datasets</p><br>
+                <a class = "center" href = "{{ site.baseurl }}/datasets">Go to Data</a>
+            </div>
         </div>
       </div>
     </div>
+
+
   </div>
 </div>
 

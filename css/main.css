@@ -49,6 +49,9 @@ a {
   display: inline;
   float: right; }
 
+.links {
+  padding-right: 2em; }
+
 @media screen and (max-width: 768px) {
   .site-nav {
     display: none;
