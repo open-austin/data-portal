@@ -24,6 +24,10 @@ $grey-color: #B8B9B6;
     font-weight: medium;
   }
 
+  h2 {
+    font-weight: bold;
+  }
+
   h4, h5, h6, p {
     font-family: 'Open Sans';
   }
@@ -387,7 +391,7 @@ a.add-dataset {
 }
 
 .search {
-  margin-top: 1em;
+  margin: 1em auto;
 }
 
 .browse {

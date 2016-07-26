@@ -11,6 +11,9 @@ h1, h2, h3 {
   font-family: 'Raleway';
   font-weight: medium; }
 
+h2 {
+  font-weight: bold; }
+
 h4, h5, h6, p {
   font-family: 'Open Sans'; }
 
@@ -259,7 +262,7 @@ a.add-dataset {
     background-color: #B8B9B6; }
 
 .search {
-  margin-top: 1em; }
+  margin: 1em auto; }
 
 .browse {
   margin-top: 1em; }

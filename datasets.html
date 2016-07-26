@@ -5,6 +5,31 @@ permalink: /datasets/
 nav: true
 ---
 
+<!-- FRESH CODE  -->
+
+<div class="row">
+  <div class = "col-xs-12"><h2>Datasets</h2></div>
+  <div class="col-sm-4">
+    <h3>Categories</h3>
+    <div class="list-group" data-component="categories-filter" data-show="5"></div>
+
+    <h3>Organizations</h3>
+    <div class="list-group" data-component="organizations-filter" data-show="15"></div>
+  </div>
+  <div class="col-sm-8" data-component="datasets-list">
+    <h3 class="datasets-count" data-hook="datasets-count"></h3>
+    <a href="{{ site.baseurl }}/add-dataset/" class="btn btn-default pull-right admin-only" data-hook="add-dataset-btn"><i class="fa fa-plus"></i> Add Dataset</a>
+    <input type="text" data-hook="search-query" placeholder="Search..." class="search form-control">
+    <div data-hook="datasets-items"></div>
+  </div>
+</div>
+
+
+
+<!-- 
+OLD CODE :(  -->
+<!-- 
+
 <div class ="row">
   <div class ="col-xs-8">
     <h2>Datasets</h2>
@@ -15,7 +40,7 @@ nav: true
 </div>
 
 <div class="row">
-  <div class="col-xs-12 search">
+  <div class="col-xs-12 search" data-component="datasets-list">
     <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
   </div>
   <div data-hook="datasets-items"></div>
@@ -36,10 +61,9 @@ nav: true
             <a href = "#" class =  "browseselect selectcontributors" id="cont-button">CONTRIBUTORS</a>
           </div>
       </div>
-
     </div>
 </div>
-
+ -->
 <!--bootstrap toggle with data hookz-->
 
     <!-- <div class="dropdown">
@@ -79,7 +103,7 @@ nav: true
 <!--end large category filter-->
 
 <!--row category filter-->
-
+<!-- 
 
 <div class = "categories active">
   <div class = "row categorydropdownrow">
@@ -109,7 +133,7 @@ nav: true
             </a>
       </div>
   </div>
-</div>
+</div> -->
 
 <!-- 
 
@@ -151,7 +175,7 @@ nav: true
 </div>
 
 <!--row category filter-->
-
+<!-- 
 <div class = "contributors">
   <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -160,7 +184,7 @@ nav: true
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
       <li> {% for organization in site.organizations %} 
-      <!-- <a href="{{ site.baseurl }}/organizations/{{ organization.url }}/" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a> -->
+      <a href="{{ site.baseurl }}/organizations/{{ organization.url }}/" class="innerdropdown" title="{{ logo_alt }}"> {{ organization.title }}</a>
       <a href="{{ site.baseurl }}/{{ organization.url}}" class="innerdropdown" title="{{ logo_alt }}"> <p>{{ organization.title }}</p></a>
       
       </li>
@@ -183,3 +207,4 @@ nav: true
 </div>
 
 
+ -->
