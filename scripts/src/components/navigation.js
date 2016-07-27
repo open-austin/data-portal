@@ -44,7 +44,7 @@ export default class {
       elements.userIssue.show()
       elements.userDropdownLink.popover({
         content: 'You do not have collaborator access to this repository, so you will not be able to make any changes.',
-        placement: 'bottom',
+        placement: 'left',
         trigger: 'hover',
         container: 'body'
       })
