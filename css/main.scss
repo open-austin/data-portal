@@ -89,7 +89,6 @@ $grey-color: #B8B9B6;
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #fdfdfd;
     border: 1px solid white;
     border-radius: 5px;
     text-align: right;
@@ -264,10 +263,13 @@ $grey-color: #B8B9B6;
       }
     }
 
-    .nav>li>a:hover {
-      background-color: $grey-color;
-      color: white;
-      font-weight: normal;
+    .nav>li>a {
+      border: solid 2px $databutton-color;
+      border-radius: 2px;
+      &:hover {
+       background-color: $databutton-color;
+       color: white;
+      }
     }
 
 }

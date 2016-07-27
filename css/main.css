@@ -61,7 +61,6 @@ a {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #fdfdfd;
     border: 1px solid white;
     border-radius: 5px;
     text-align: right;
@@ -176,10 +175,12 @@ a {
     float: none; }
 .header .navbar-right li {
   float: right; }
-.header .nav > li > a:hover {
-  background-color: #B8B9B6;
-  color: white;
-  font-weight: normal; }
+.header .nav > li > a {
+  border: solid 2px #294B6B;
+  border-radius: 2px; }
+  .header .nav > li > a:hover {
+    background-color: #294B6B;
+    color: white; }
 
 /* Welcome page */
 .welcome .intro {
