@@ -43,7 +43,7 @@ export default class {
     } else if (user.isCollaborator === false) { // don't catch undefined
       elements.userIssue.show()
       elements.userDropdownLink.popover({
-        content: 'You do not have collaborator access to this repository, so you will not be able to make any changes.',
+        content: 'You do not have collaborator access to this repo, so you will not be able to make any changes.',
         placement: 'left',
         trigger: 'hover',
         container: 'body'
