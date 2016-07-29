@@ -8,7 +8,7 @@ resources:
     url: ''
     format: ''
 proprietaryRed: ''
-difficulty: ''
+difficulty: needs scrubbing
 license: ''
 maintainer: ''
 maintainer_email: ''
