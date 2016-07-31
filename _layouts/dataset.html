@@ -22,12 +22,12 @@ comments: true
           <div class="col-xs-10">
             <span>
               <h2 property="dct:title">{{ page.title }}</h2>
-               <div class = "contributedby"><p>Contributed by: <a class = "contributedby" href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}" class="thumbnail">{{ organization.title }}</a></p></div>
+               <div class = "contributedby"><p>Contributed by: <a class = "contributedby" href="{{ site.baseurl }}{{ organization.url }}" class="thumbnail">{{ organization.title }}</a></p></div>
             </span>
           </div>
           <div class="col-xs-2">
             <a href="?view=edit" class="edit pull-right btn btn-default admin-only" data-hook="edit-dataset-btn"><h4>Edit</h4></a>
-            <style> [data-component~=view-switcher] [data-hook~=view] {display: none;} </style>
+            <style>[data-component~=view-switcher] [data-hook~=view] {display: none;} </style>
           </div>
         </div>
       </div>

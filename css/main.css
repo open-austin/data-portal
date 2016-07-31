@@ -678,6 +678,9 @@ p.resourceanswer {
 .orgsearch {
   clear: both; }
 
+.orgdescription {
+  margin-top: 1em; }
+
 .project {
   margin-top: 1em; }
 

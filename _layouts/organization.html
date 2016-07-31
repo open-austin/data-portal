@@ -1,120 +1,105 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div class = "col-xs-12">
-    <div class = "row">
-        <div class = "col-xs-10">
-        <h2>
-          {{ page.title }}
-        </h2>
-        </div>
-        <div class = "col-xs-2 editcol">
-        
-        <a href="?view=edit" class = "edit">Edit</a>
-        <!-- 
-        <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a> -->
-        </div>
+
+
+<div data-component="view-switcher">
+  <div class="row orgdescription" data-hook="view" data-view="display">
+    {% if page.logo and page.logo != empty %}
+    <div class="col-sm-6">
+      <a href="{{ page.logo }}" class="thumbnail"><img src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
     </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-6">
-    <div data-component="view-switcher">
-      <div data-hook="view" data-view="display">
-          <a href="{{ page.logo }}" class="thumbnail"><img src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
+    <div class="col-sm-6">
+    {% else %}
+    <div class="col-sm-12">
+    {% endif %}
+      <h1>
+        {{ page.title }}
+        <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
+      </h1>
+      <p>{{ page.description }}</p>
+    </div>
+
+    <div class="col-sm-12">
+      <div data-component="datasets-list" data-organization="{{ page.title | slugify }}">
+        <h3 class="datasets-count" data-hook="datasets-count"></h3>
+        <input type="text" data-hook="search-query" placeholder="Search..." class="search form-control">
+        <div data-hook="datasets-items"></div>
       </div>
     </div>
   </div>
-  <div class="col-xs-6">
-    <div class = "description">
-    <p>{{ page.description }}</p><br>
-    <a href = "mailto:{{ page.email }}"><h4><i class="fa fa-envelope desci" aria-hidden="true"></i>  Email</h4></a>
-    <a href = "mailto:{{ page.github }}"><h4><i class="fa fa-github desci" aria-hidden="true"></i>  Github</h4></a>
+
+  <div class="row" data-hook="view" data-view="edit">
+    <div class="col-sm-12">
+      {% include organization-form.html organization=page %}
     </div>
+    <div class="col-sm-2">
+      <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
     </div>
-    </div>
+  </div>
+
 </div>
 
-<div class="row projectsx">
-    <!--Example Org Start-->
-    <div class="col-xs-12 col-sm-6">
-        <div data-component="datasets-list" data-organization="{{ page.title | slugify }}" class="orgsearch">
-            <h3 class="datasets-count" data-hook="datasets-count"></h3>
-            <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
-            <div data-hook="datasets-items"></div>
-        </div>
-        <div class="orgexample">
-            <div class = "row">
-                <div class="col-xs-12" data-component="datasets-list">
-                    <h3 class="datasets-count" data-hook="datasets-count"></h3>
-                </div>
 
-              <div class="col-xs-12" data-component="datasets-list">
-                <div class="dataset-wrapper">
-                  <div data-hook="datasets-items">
-                  </div>
-                    </div>
-                  </div> 
-                </div>
-        </div>
-    </div>
-    
-    <!--Example Org End-->
-    <!--Example Projects Start-->
-    <div class="col-xs-12 col-sm-6">
-        <h3> Projects posted by this Contributor </h3>
-        <div class="row project">
-            <div class="col-xs-6">
-                <div class="exampleimage">
-                    <img src="{{ site.baseurl }}/img/greenmap.png">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <a href="#">Austin Green Map</a>
-                <br>
-                <p>An interactive map of Austin parks that you can search by amenity.
-                </p>
-            </div>
-        </div>
-        <div class="row project">
-            <div class="col-xs-6">
-                <div class="exampleimage">
-                    <img src="{{ site.baseurl }}/img/reportcard.png">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <a href="#">Open Data Report Card</a>
-                <br>
-                <p>A scorecard to track adoption of CoA’s Open Data Initiative</p>
-            </div>
-        </div>
-        <div class="row project">
-            <div class="col-xs-6">
-                <div class="exampleimage">
-                    <img src="{{ site.baseurl }}/img/capmetrics.png">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <a href="#">Capmetrics</a>
-                <br>
-                <p>A data visualization of the bus’ actual versus planned schedule</p>
-            </div>
-        </div>
-    </div>
-    <!--Example Projects End-->
-
+<!--old code -->
 <!-- 
+<div class="row" data-hook="view" data-view="display">
+    <div class = "col-xs-12">
+        <div class = "row">
+            <div class = "col-xs-10">
+            <h2>
+              {{ page.title }}
+            </h2>
+            </div>
+            <div class = "col-xs-2 editcol">
+            <a href="?view=edit" class="pull-right btn btn-default admin-only">Edit</a>
+            </div>
+        </div>
+    </div>
 
-<div class="row" data-hook="view" data-view="edit">
-  <div class="col-sm-8 col-sm-offset-2">
-    {% include organization-form.html organization=page %}
-  </div>
-  <div class="col-sm-2">
-    <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
-  </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div data-component="view-switcher">
+                <div data-hook="view" data-view="display">
+                    <a href="{{ site.baseurl }}/images/{{ page.logo }}" class="thumbnail"><img src="{{ page.logo }}" alt="{{ page.title }} logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class = "description">
+                <p>{{ page.description }}</p><br>
+                <a href = "mailto:{{ page.email }}"><h4><i class="fa fa-envelope desci" aria-hidden="true"></i>Email</h4></a>
+                <a href = "{{ page.github }}"><h4><i class="fa fa-github desci" aria-hidden="true"></i>  Github</h4></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="orgexample">
+                <div class = "row">
+                    <div data-component="datasets-list" data-organization="{{ page.title | slugify }}">
+                        <h3 class="datasets-count" data-hook="datasets-count"></h3>
+                        <input type="text" data-hook="search-query" placeholder="Search..." class="search form-control">
+                        <div data-hook="datasets-items">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" data-hook="view" data-view="edit">
+        <div class="col-sm-8 col-sm-offset-2">
+            {% include organization-form.html organization=page %}
+        </div>
+        <div class="col-sm-2">
+            <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
+        </div>
+    </div>
+
 </div>
+
  -->
-    
-</div>
-
