@@ -2,7 +2,7 @@
 schema: default
 title: Travis County Appraisal District
 organization: Travis County Appraisal District
-notes: "Since 1981 Travis Central Appraisal District has had one primary mission,\r\nto provide accurate appraisal of all property in Travis County at one\r\nhundred percent market value, equally and uniformly, in a professional,\r\nethical, economical and courteous manner, working to ensure that each\r\ntaxpayer pays only their fair share of the property tax burden.\r\n\r\nTCAD provides exports of appraisal data for a charge of $55 per export.\r\n\r\nA donor has provided us with two datasets, the final tax rolls of 2005,\r\nand a preliminary snapshot of 2015. The data, as provided by TCAD, is\r\nin this directory.\r\n\r\nPlease note that these datasets are intended for use with Microsoft\r\nAccess.  We are looking for a volunteer to help convert to a more\r\nconsumable format."
+notes: "This site contains data published by Open Austin.\r\n\r\nTypically this data is derived from government information, converted\r\nor processed to some form more amenable for public use.\r\n\r\nThe source to this repository is here:\r\n\r\nhttps://github.com/open-austin/data-open-austin-org\r\n\r\nIf you are a github user, you can open issues or submit changes (pull\r\nrequests) for publication."
 resources:
   - name: 'Appraisal Data as of 2005 '
     url: >-
@@ -18,7 +18,7 @@ resources:
     format: ''
 proprietaryRed: ''
 difficulty: ready to use
-license: 'https://creativecommons.org/licenses/by/4.0/'
+license: ''
 category:
   - Planning
 maintainer: TCAD Records
