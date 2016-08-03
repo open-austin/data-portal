@@ -777,7 +777,6 @@ a.innerdropdown {
 
 
   .additional {
-    padding: 0 1em 1em 1em;
     float: left;
     margin-bottom: 1em;
   }
@@ -879,6 +878,18 @@ p.resourceanswer {
   background-color: $background-color;
   width: 100%;
   float: none;
+}
+
+@media screen and (min-width: 768px){
+  p {
+    margin: 0 auto;
+  }
+  .resourceintro, p.resourceanswer {
+  padding: 1em;
+  background-color: $background-color;
+  width: 60%;
+  float: none;
+  }
 }
 
 /* contributor page */
@@ -987,9 +998,7 @@ p.resourceanswer {
     color: red;
   }
 
-  [data-component~=view-switcher] [data-hook~=view] {
-    display: none;
-  }
+  [data-component~=view-switcher] [data-hook~=view] {display: none;}
 
   .homepage-categories,
   .theme-gallery {

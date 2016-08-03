@@ -559,7 +559,6 @@ a.innerdropdown {
   text-transform: uppercase; }
 
 .additional {
-  padding: 0 1em 1em 1em;
   float: left;
   margin-bottom: 1em; }
 
@@ -641,6 +640,15 @@ p.resourceanswer {
   width: 100%;
   float: none; }
 
+@media screen and (min-width: 768px) {
+  p {
+    margin: 0 auto; }
+
+  .resourceintro, p.resourceanswer {
+    padding: 1em;
+    background-color: #EDEFF3;
+    width: 60%;
+    float: none; } }
 /* contributor page */
 .editcol .edit {
   float: right;
