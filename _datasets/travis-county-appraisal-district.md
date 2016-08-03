@@ -16,9 +16,9 @@ resources:
     url: >-
       http://data.open-austin.org/TCAD_STExport/Standard%20Layouts%20&%20Codes.zip
     format: ''
-proprietaryRed: ''
+proprietaryRed: 'true'
 difficulty: ready to use
-license: ''
+license: 'https://creativecommons.org/licenses/by/4.0/'
 category:
   - Planning
 maintainer: TCAD Records
