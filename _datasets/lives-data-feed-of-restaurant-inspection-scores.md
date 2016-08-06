@@ -2,7 +2,7 @@
 schema: default
 title: LIVES data feed of restaurant inspection scores
 organization: Open Austin
-notes: "This site contains data published by Open Austin.\r\n\r\nTypically this data is derived from government information, converted\r\nor processed to some form more amenable for public use.\r\n\r\nThe source to this repository is here:\r\n\r\nhttps://github.com/open-austin/data-open-austin-org\r\n\r\nIf you are a github user, you can open issues or submit changes (pull\r\nrequests) for publication."
+notes: "In this directory, we publish a LIVES data feed, updated nightly,\r\nwith restaurant inspection scores from the Austin/Travis County\r\nHealth Department.\r\n\r\nThe LIVES data format is described here:\r\n\r\nhttp://www.yelp.com/healthscores\r\n\r\nMore info here:\r\n\r\nhttp://www.codeforamerica.org/blog/2013/01/17/foodies-and-open-data-enthusiasts-rejoice/\r\n\r\nThe feed generator is open source, available here:\r\n\r\nhttps://github.com/chip-rosenthal/atx-lives-feed"
 resources:
   - name: LIVES data feed of restaurant inspection scores
     url: 'http://data.open-austin.org/LIVES/lives.ci.austin.tx.us.zip'
