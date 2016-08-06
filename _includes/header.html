@@ -37,10 +37,15 @@
                                     </div>
                                     <ul class="subnav">
                                         {% for item in site.pages %} {% if item.nav %} {% if page.url == item.url }} %}
-                                        <li class="nav-active"><a id="navlink" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} <span class="sr-only">(current)</span></a></li>
+                                        <li class="nav-active">
+                                            <a id="navlink" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} <span class="sr-only">(current)</span></a>
+                                        </li>
                                         {% else %}
-                                        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-                                        {% endif %} {% endif %} {% endfor %}
+                                        <li>
+                                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                                        {% endif %} 
+                                        {% endif %} 
+                                        {% endfor %}
                                     </ul>
                                 </div>
                             </div>

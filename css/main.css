@@ -1,5 +1,8 @@
 /* Variables */
 /* Universals */
+body {
+  overflow-x: hidden; }
+
 .row {
   box-sizing: border-box; }
 
@@ -17,11 +20,11 @@ h2 {
 h4, h5, h6, p {
   font-family: 'Open Sans'; }
 
-h6 {
-  font-size: 2em; }
-
 h4 {
   margin-bottom: 0; }
+
+h6 {
+  font-size: 2em; }
 
 p {
   margin-top: 0em; }
@@ -112,8 +115,7 @@ a {
   .header a:hover {
     border-bottom: solid 2px #EA4FBF; }
 .header .headerwrapper {
-  border-bottom: solid 3px #294B6B;
-  margin: 0em 0.5em; }
+  border-bottom: solid 3px #294B6B; }
 .header .logo {
   height: 6em;
   padding: 1em 0; }

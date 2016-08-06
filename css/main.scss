@@ -10,6 +10,10 @@ $grey-color: #B8B9B6;
 
 /* Universals */
 
+body {
+  overflow-x: hidden;
+}
+
 .row {
   box-sizing: border-box;
 }
@@ -32,12 +36,12 @@ $grey-color: #B8B9B6;
     font-family: 'Open Sans';
   }
 
-  h6 {
-    font-size: 2em;
+   h4 {
+    margin-bottom: 0;
   }
 
-  h4 {
-    margin-bottom: 0;
+  h6 {
+    font-size: 2em;
   }
 
   p {
@@ -143,7 +147,7 @@ $grey-color: #B8B9B6;
   }
 }
 
-  /* Nav */
+/* Nav */
 
 .header {
   a {
@@ -159,7 +163,6 @@ $grey-color: #B8B9B6;
 
   .headerwrapper {
       border-bottom: solid 3px $databutton-color;
-      margin: 0em 0.5em;
     }
 
     .logo {
