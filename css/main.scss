@@ -61,7 +61,7 @@ body {
   .btn {
     border: none;
     background-color: $databutton-color;
-    color: white;
+    color: #fff;
     font-weight: medium;
     font-family: 'Open Sans';
     &:hover {
@@ -584,12 +584,14 @@ a.innerdropdown {
   margin-bottom: 1em;
 }
 
-.score h1 {
+.score h3 {
   margin-top: 0;
   padding: 0.75em 0.5em;
-  color: $text-color;
+  color: #fff;
   background-color: $score-green;
   border-radius: 2px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .ratings {
@@ -670,26 +672,26 @@ a.innerdropdown {
     margin-bottom: 1em;
   }
 
-    .edit {
-      float: right;
-      padding: 0.25em 1em;
-      margin: 2em auto 1em auto;
-      display: inline-block;
-      color: $text-color;
-      border: solid 2px $databutton-color;
+  .edit {
+    float: right;
+    padding: 0.25em 1em;
+    margin: 2em auto 1em auto;
+    display: inline-block;
+    color: $text-color;
+    border: solid 2px $databutton-color;
+    border-radius: 2px;
+    text-decoration: none;
+      &:hover {
+      background-color: $grey-color;
+    }
+      h4 {
+      text-transform: lowercase;
+      padding: 0;
+      margin: 0 auto;
       border-radius: 2px;
-      text-decoration: none;
-        &:hover {
-        background-color: $grey-color;
-      }
-        h4 {
-        text-transform: lowercase;
-        padding: 0;
-        margin: 0 auto;
-        border-radius: 2px;
-        text-align: center;
-        display: inline;
-      }
+      text-align: center;
+      display: inline;
+    }
   }
 
   a.contributedby {
@@ -697,6 +699,7 @@ a.innerdropdown {
   }
 
   .iveused {
+    clear: both;
     h4 {
       margin-top: 1em;
     text-transform: none;
@@ -708,7 +711,7 @@ a.innerdropdown {
     padding: 0.5em;
     border-radius: 2px;
     float: left;
-    display: inline;
+    display: inline-block;
   }
   }
 
@@ -806,30 +809,37 @@ a.innerdropdown {
     }
   }
 
-  .add {
-      float: right;
-      padding: 0.25em 1em;
-      margin: 2em auto 1em auto;
-      display: inline-block;
-      color: $text-color;
-      border: solid 2px $databutton-color;
-      border-radius: 2px;
+.add {
+    float: right;
+    padding: 0.25em 1em;
+    margin: 2em auto 1em auto;
+    display: inline-block;
+    color: $text-color;
+    border: solid 2px $databutton-color;
+    border-radius: 2px;
+    text-decoration: none;
+      &:hover {
       text-decoration: none;
-        &:hover {
-        text-decoration: none;
-        background-color: $grey-color;
-      }
-        h4 {
-        text-transform: lowercase;
-        padding: 0;
-        margin: 0 auto;
-        border-radius: 2px;
-        text-align: center;
-        display: inline;
-      }
+      background-color: $grey-color;
     }
+      h4 {
+      text-transform: lowercase;
+      padding: 0;
+      margin: 0 auto;
+      border-radius: 2px;
+      text-align: center;
+      display: inline;
+    }
+}
 
 /* add dataset page */
+
+.editform {
+  background-color: #fff;
+  border: solid 2px $databutton-color;
+  margin: 2em auto;
+  padding: 1em;
+}
 
 .addl {
   margin-top: 2em;

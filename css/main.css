@@ -41,7 +41,7 @@ a {
 .btn {
   border: none;
   background-color: #294B6B;
-  color: white;
+  color: #fff;
   font-weight: medium;
   font-family: 'Open Sans'; }
   .btn:hover {
@@ -414,12 +414,14 @@ a.innerdropdown {
   display: block;
   margin-bottom: 1em; }
 
-.score h1 {
+.score h3 {
   margin-top: 0;
   padding: 0.75em 0.5em;
-  color: #313131;
+  color: #fff;
   background-color: #91C565;
-  border-radius: 2px; }
+  border-radius: 2px;
+  text-align: center;
+  font-weight: bold; }
 
 .ratings {
   color: #313131;
@@ -503,17 +505,19 @@ a.innerdropdown {
       display: inline; }
   .topsection a.contributedby {
     margin-left: 0.5em; }
-  .topsection .iveused h4 {
-    margin-top: 1em;
-    text-transform: none;
-    background-color: #294B6B;
-    color: white;
-    padding: 0.5em;
-    border-radius: 2px;
-    float: left;
-    display: inline; }
-    .topsection .iveused h4:hover {
-      background-color: #313131; }
+  .topsection .iveused {
+    clear: both; }
+    .topsection .iveused h4 {
+      margin-top: 1em;
+      text-transform: none;
+      background-color: #294B6B;
+      color: white;
+      padding: 0.5em;
+      border-radius: 2px;
+      float: left;
+      display: inline-block; }
+      .topsection .iveused h4:hover {
+        background-color: #313131; }
   .topsection .howrate {
     margin-top: 1em; }
   .topsection .fa-thumbs-up {
@@ -601,6 +605,12 @@ h4 {
     display: inline; }
 
 /* add dataset page */
+.editform {
+  background-color: #fff;
+  border: solid 2px #294B6B;
+  margin: 2em auto;
+  padding: 1em; }
+
 .addl {
   margin-top: 2em; }
 
