@@ -73,7 +73,6 @@ a {
     padding: 8.8px 0; } }
 .header-wrapper {
   padding-bottom: 1em;
-  margin-bottom: 1em;
   border-bottom: solid 5px #ea6036;
   display: block;
   box-sizing: border-box; }
@@ -82,7 +81,7 @@ a {
     display: block;
     padding-top: 1em; }
     .header-wrapper .logoandlink img {
-      height: 2em; }
+      height: 2.5em; }
     .header-wrapper .logoandlink .site-title {
       font-size: 2em;
       margin-top: 2em;
@@ -106,83 +105,94 @@ a {
         border-bottom: solid 1px #ea6036; }
 
 /* Nav */
-.header a {
-  text-align: left;
-  margin: 0;
-  color: #313131;
-  text-decoration: none;
-  border-bottom: solid 1px #EA4FBF; }
-  .header a:hover {
-    border-bottom: solid 2px #EA4FBF; }
-.header .headerwrapper {
-  border-bottom: solid 3px #294B6B; }
-.header .logo {
-  height: 6em;
-  padding: 1em 0; }
-.header .logolink {
-  width: 20%;
-  max-width: 80px;
-  float: left;
-  text-decoration: none;
-  border-bottom: none; }
-  .header .logolink:hover {
+.header {
+  padding-top: 1em;
+  background-color: #294B6B; }
+  .header a {
+    text-align: left;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: solid 1px #EA4FBF; }
+    .header a:hover {
+      border-bottom: solid 2px #EA4FBF; }
+  .header .headerwrapper {
+    border-bottom: solid 3px #294B6B; }
+  .header .logo {
+    height: 5em;
+    float: left;
+    margin-top: 0.5em; }
+  @media screen and (max-width: 570px) {
+    .header .logo {
+      display: none; } }
+  .header .logolink {
+    width: 20%;
+    max-width: 80px;
+    float: left;
+    text-decoration: none;
     border-bottom: none; }
-.header .title {
-  margin-top: 0em;
-  border-bottom: none; }
-.header .title-wrapper h1 {
-  float: left; }
-.header .title-wrapper .login {
-  float: right; }
-.header .nav-wrapper {
-  float: left;
-  width: 80%; }
-.header ul.subnav {
-  text-align: left;
-  float: left;
-  margin: 0;
-  padding: 0; }
-  .header ul.subnav li {
-    float: left; }
-    .header ul.subnav li:first-child {
-      margin-left: 0; }
-.header #navlink {
-  float: left;
-  color: #313131; }
-.header .login {
-  float: right; }
-.header .nav-active {
-  font-weight: bold; }
-.header .navbar {
-  border: none; }
-.header .navbar-brand {
-  padding-left: 0;
-  margin-left: 0; }
-.header li {
-  float: left;
-  margin-left: 0.5em;
-  list-style-type: none;
-  text-transform: uppercase; }
-.header ul {
-  list-style-type: none; }
-.header a.loginbutton {
-  color: #B8B9B6;
-  padding: 0.15em 1em;
-  border-radius: 2px;
-  text-decoration: none;
-  margin-top: 0.25em;
-  border: none;
-  float: right; }
-  .header a.loginbutton i {
-    float: none; }
-.header .navbar-right li {
-  float: right; }
-.header .nav > li > a {
-  border: solid 2px #294B6B;
-  border-radius: 2px; }
-  .header .nav > li > a:hover {
-    background-color: #294B6B;
-    color: white; }
+    .header .logolink:hover {
+      border-bottom: none; }
+  .header .title {
+    margin-top: 0em;
+    border-bottom: none; }
+  .header .title-wrapper h1 {
+    font-weight: bold;
+    float: left;
+    color: #fff;
+    font-size: 3em; }
+  .header .title-wrapper .login {
+    float: right; }
+  .header .nav-wrapper {
+    margin-left: 1em;
+    float: left;
+    width: 80%;
+    margin-bottom: 1em; }
+  .header ul.subnav {
+    text-align: left;
+    float: left;
+    margin: 0;
+    padding: 0; }
+    .header ul.subnav li {
+      float: left; }
+      .header ul.subnav li:first-child {
+        margin-left: 0; }
+  .header #navlink {
+    float: left;
+    color: #fff; }
+  .header .login {
+    float: right; }
+  .header .nav-active {
+    font-weight: bold; }
+  .header .navbar {
+    border: none; }
+  .header .navbar-brand {
+    padding-left: 0;
+    margin-left: 0; }
+  .header li {
+    float: left;
+    margin-left: 0.5em;
+    list-style-type: none;
+    text-transform: uppercase; }
+  .header ul {
+    list-style-type: none; }
+  .header a.loginbutton {
+    color: #B8B9B6;
+    padding: 0.15em 1em;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-top: 0.25em;
+    border: none;
+    float: right; }
+    .header a.loginbutton i {
+      float: none; }
+  .header .navbar-right li {
+    float: right; }
+  .header .nav > li > a {
+    border: solid 2px #fff;
+    border-radius: 2px; }
+    .header .nav > li > a:hover {
+      background-color: #313131; }
 
 /* Welcome page */
 .welcome .intro {
@@ -414,7 +424,7 @@ a.innerdropdown {
   display: block;
   margin-bottom: 1em; }
 
-.score h3 {
+.score h4 {
   margin-top: 0;
   padding: 0.75em 0.5em;
   color: #fff;
@@ -435,14 +445,6 @@ a.innerdropdown {
   padding: 0.5em 1em 0.25em 1em;
   border-radius: 2px;
   background-color: #313131; }
-
-.exampledataset h4 {
-  margin-right: 0.25em;
-  color: #313131;
-  padding: 0.05em;
-  margin-top: 0;
-  text-align: center;
-  float: left; }
 
 .ratings p {
   color: #313131; }

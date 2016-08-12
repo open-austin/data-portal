@@ -106,7 +106,6 @@ body {
 
 .header-wrapper {
   padding-bottom: 1em;
-  margin-bottom: 1em;
   border-bottom: solid 5px #ea6036;
   display: block;
   box-sizing: border-box;
@@ -115,7 +114,7 @@ body {
     display: block;
     padding-top: 1em;
     img {
-      height: 2em;
+      height: 2.5em;
     }
     .site-title {
       font-size: 2em;
@@ -150,10 +149,12 @@ body {
 /* Nav */
 
 .header {
+  padding-top: 1em;
+  background-color: $databutton-color;
   a {
     text-align: left;
     margin: 0;
-    color: $text-color;
+    color: #fff;
     text-decoration: none;
     border-bottom: solid 1px $cta-color;
     &:hover {
@@ -166,8 +167,15 @@ body {
     }
 
     .logo {
-      height: 6em;
-      padding: 1em 0;
+      height: 5em;
+      float: left;
+      margin-top: 0.5em;
+    }
+
+    @media screen and (max-width: 570px) {
+      .logo {
+        display: none;
+      }
     }
 
    .logolink {
@@ -188,7 +196,10 @@ body {
 
     .title-wrapper {
       h1 {
+        font-weight: bold;
         float: left;
+        color: #fff;
+        font-size: 3em;
       }
       .login {
         float: right;
@@ -196,8 +207,10 @@ body {
     }
 
     .nav-wrapper {
+      margin-left: 1em;
       float: left;
       width: 80%;
+      margin-bottom: 1em;
     }
 
     ul.subnav {
@@ -215,7 +228,7 @@ body {
 
    #navlink {
       float: left;
-      color: $text-color;
+      color: #fff;
     }
 
     .login {
@@ -267,11 +280,11 @@ body {
     }
 
     .nav>li>a {
-      border: solid 2px $databutton-color;
+      
+      border: solid 2px #fff;
       border-radius: 2px;
       &:hover {
-       background-color: $databutton-color;
-       color: white;
+       background-color: $text-color;
       }
     }
 
@@ -584,7 +597,7 @@ a.innerdropdown {
   margin-bottom: 1em;
 }
 
-.score h3 {
+.score h4 {
   margin-top: 0;
   padding: 0.75em 0.5em;
   color: #fff;
@@ -607,15 +620,6 @@ a.innerdropdown {
   padding: 0.5em 1em 0.25em 1em;
  border-radius: 2px;
   background-color: $text-color;
-}
-
-.exampledataset h4 {
-  margin-right: 0.25em;
-  color: $text-color;
-  padding: 0.05em;
-  margin-top: 0;
-  text-align: center;
-  float: left;
 }
 
 .ratings p {

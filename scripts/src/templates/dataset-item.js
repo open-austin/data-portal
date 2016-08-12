@@ -15,12 +15,12 @@ return `
             </div>
             <div class="exampledataset">
                 <div class="row">
-                    <div class="col-xs-5">
+                    <div class="col-xs-4">
                         <div class="score">
-                            <h1>${data.difficulty || 'N/A'}</h1>
+                            <h4>${data.difficulty || 'N/A'}</h4>
                         </div>
                     </div>
-                    <div class="col-xs-7">
+                    <div class="col-xs-8">
                         <div class="description">
                             <p>${data.notes || ''}</p>
                         </div>
