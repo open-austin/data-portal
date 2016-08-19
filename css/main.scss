@@ -593,12 +593,12 @@ a.innerdropdown {
 
 .datasettitle {
   float: left;
-  width: 80%;
   display: inline-block;
+  margin-right: 2em;
 }
 
 .editbutton {
-  float: right;
+  float: left;
   display: inline-block;
 }
 
@@ -747,7 +747,7 @@ a.innerdropdown {
     }
 
   .datafiles {
-    padding: 0 0em 1em 1em;
+    padding: 0 0em 1em 0em;
     float: left;
     max-width: 28em;
     margin-bottom: 1em;
