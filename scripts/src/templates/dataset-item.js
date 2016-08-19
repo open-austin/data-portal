@@ -17,7 +17,7 @@ return `
                 <div class="row">
                     <div class="col-xs-4">
                         <div class="score">
-                            <h4>${data.difficulty || 'N/A'}</h4>
+                            <h3>${data.difficulty || 'N/A'}</h3>
                         </div>
                     </div>
                     <div class="col-xs-8">
