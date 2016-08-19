@@ -18,15 +18,15 @@ comments: true
     {% else %}
     <div class="exampletile" id = "datasetexampletile">
     {% endif %}
-        <div class="row">
-          <div class="col-xs-10">
+        <div class="row titleeditwrapper">
+          <div class="datasettitle">
             <span>
               <h2 property="dct:title">{{ page.title }}</h2>
                <div class = "contributedby"><p>Contributed by: <a class = "contributedby" href="{{ site.baseurl }}{{ organization.url }}" class="thumbnail">{{ organization.title }}</a></p>
                </div>
             </span>
           </div>
-          <div class="col-xs-2">
+          <div class="editbutton">
             <a href="?view=edit" class="edit pull-right btn btn-default admin-only" data-hook="edit-dataset-btn"><h4>Edit</h4></a>
           </div>
         </div>

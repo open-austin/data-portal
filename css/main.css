@@ -20,9 +20,6 @@ h2 {
 h4, h5, h6, p {
   font-family: 'Open Sans'; }
 
-h4 {
-  margin-bottom: 0; }
-
 h6 {
   font-size: 2em; }
 
@@ -44,10 +41,10 @@ a {
   color: #fff;
   font-weight: medium;
   font-family: 'Open Sans'; }
-  .btn:hover {
-    background-color: #313131; }
   .btn i {
     color: #fff; }
+  .btn:hover {
+    background-color: #313131; }
 
 /* Specific Styling */
 /*globalnav*/
@@ -419,7 +416,19 @@ a.innerdropdown {
   .subcat:hover {
     background-color: #B8B9B6; }
 
-/* datasets */
+/* dataset */
+.titleeditwrapper {
+  display: inline-block; }
+
+.datasettitle {
+  float: left;
+  width: 80%;
+  display: inline-block; }
+
+.editbutton {
+  float: right;
+  display: inline-block; }
+
 .dataset-wrapper {
   display: block;
   margin-bottom: 1em; }
@@ -492,12 +501,13 @@ a.innerdropdown {
     padding: 0.25em 1em;
     margin: 2em auto 1em auto;
     display: inline-block;
-    color: #313131;
+    color: #fff;
     border: solid 2px #294B6B;
     border-radius: 2px;
     text-decoration: none; }
     .topsection .edit:hover {
-      background-color: #B8B9B6; }
+      background-color: #B8B9B6;
+      color: #fff; }
     .topsection .edit h4 {
       text-transform: lowercase;
       padding: 0;

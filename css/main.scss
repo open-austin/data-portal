@@ -36,10 +36,6 @@ body {
     font-family: 'Open Sans';
   }
 
-   h4 {
-    margin-bottom: 0;
-  }
-
   h6 {
     font-size: 2em;
   }
@@ -64,11 +60,11 @@ body {
     color: #fff;
     font-weight: medium;
     font-family: 'Open Sans';
-    &:hover {
-      background-color: $text-color;
-    }
     i {
       color: #fff;
+    }
+    &:hover {
+      background-color: $text-color;
     }
   }
 
@@ -590,7 +586,21 @@ a.innerdropdown {
   }
 }
 
-/* datasets */
+/* dataset */
+.titleeditwrapper {
+  display: inline-block;
+}
+
+.datasettitle {
+  float: left;
+  width: 80%;
+  display: inline-block;
+}
+
+.editbutton {
+  float: right;
+  display: inline-block;
+}
 
 .dataset-wrapper {
   display: block;
@@ -681,12 +691,13 @@ a.innerdropdown {
     padding: 0.25em 1em;
     margin: 2em auto 1em auto;
     display: inline-block;
-    color: $text-color;
+    color: #fff;
     border: solid 2px $databutton-color;
     border-radius: 2px;
     text-decoration: none;
       &:hover {
       background-color: $grey-color;
+      color: #fff;
     }
       h4 {
       text-transform: lowercase;
