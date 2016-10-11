@@ -4,7 +4,7 @@ description: The People of Austin's Network for Data Access
 baseurl: /data-portal
 
 # Site theme
-theme: Minima
+jkan_theme: Default
 
 # Authentication
 github_client_id: ab6c35c85f1962157f9c
